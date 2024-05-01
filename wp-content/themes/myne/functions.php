@@ -736,8 +736,7 @@ else
 }
 
 $content = '<div class="btnSpace text-center"> <a href="'.$app_url.'" target="_blank"><img '.$app_css.' src="'.$app_icon['url'].'" alt="img">'.$app_coming_soon.'</a> </div>
-        <div class="btnSpace text-center"> <a href="'.$play_url.'" target="_blank" ><img '.$play_css.' src="'.$play_icon['url'].'" alt="img"> '. $play_coming_soon.'</a> </div>
-      </div>';
+        <div class="btnSpace text-center"> <a href="'.$play_url.'" target="_blank" ><img '.$play_css.' src="'.$play_icon['url'].'" alt="img"> '. $play_coming_soon.'</a> </div>';
 	  
 	  return $content;
 	
