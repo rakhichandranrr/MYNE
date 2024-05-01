@@ -57,3 +57,8 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
 
 <?php wp_footer(); ?>
 </body></html>
+<script>
+$(".wpcf7-submit").click(function() {
+    $(".recaptcha-checkbox").click();
+});
+</script>
