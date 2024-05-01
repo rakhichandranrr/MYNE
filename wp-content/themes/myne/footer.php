@@ -60,7 +60,7 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
 <script>
 $(".wpcf7-submit").click(function() {
 	console.log('test');
-    $("#rc-anchor-container").click();
+    $("#rc-anchor-container").toggle();
 	$(".recaptcha-checkbox").addClass('recaptcha-checkbox-hover');
 });
 </script>
