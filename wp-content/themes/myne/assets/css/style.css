@@ -49,10 +49,10 @@ img {
     max-width: 100%;
 }
 
-p {
+/*p {
     font-size: 16px;
     color: var(--color3);
-}
+}*/
 
 a {
     transition: all ease 0.5s;
@@ -638,6 +638,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .priceWraper .titleArea .mainTitle{ margin-bottom: 64px; }
 
+.titlSpace{ margin-bottom: 64px; }
 
 .tabFrame{
     background-image: url(../images/others/frame-tab.png);
@@ -674,7 +675,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     opacity: 0.8;
     z-index: -1;
 }
-.tabFrame .prdImg{ min-height: 436px; max-width: 100%; object-fit: cover; }
+.tabFrame .prdImg{ min-height: 436px; width: 100%; object-fit: cover; }
 
 .tabsSty .aligCont{
     display: flex;
@@ -692,7 +693,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     width: 279px;
     height: 574px;
 }
-.imgFrames.mobOnly .tabFrame .prdImg{ min-height: 555px; }
+.imgFrames.mobOnly .tabFrame .prdImg{ width: 100%; min-height: 555px; object-fit: cover; }
 
 .imgFrames.mobOnly .tabFrame::after{
     background-image: url(../images/others/FrontCam.png);
@@ -773,6 +774,100 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 .tabsSty .tab-content{ margin-top: 60px; }
 
+.appDownload .getstartWraper{ padding-top: 32px; padding-bottom: 32px; }
+
+.bnr_content.innerBnr h1 {
+    font-size: 72px;
+    line-height: 88px;
+}
+.bnr_content.innerBnr h1 strong{
+    display: block;
+}
+.abt_content .paragraph {
+    font-size: 24px;
+    line-height: inherit;
+}
+.abt_content .paragraph p{
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 32px;
+}
+.teamBxs .teamImg {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 440px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teamBxs .teamImg img {
+    object-fit: cover;
+    min-height: 440px;
+    width: 100%;
+}
+.teamSpace{ padding: 0 16px; }
+
+.row.teamSpace {
+    padding: 0 0px;
+    margin: 0 -15px;
+}
+.teamWraper, .norm_conts{ color: var(--white); }
+
+.teamBxs h4 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 12px;
+    padding: 0;
+}
+.teamBxs  .paragraph {
+    font-size: 18px;
+    line-height: 24px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.privacy .innerBnr h1{ margin: 0 !important; }
+
+.privacy .innerBnr h1 strong{ display: inline-block; }
+
+.privacy{ background: transparent; padding-bottom: 0 !important; }
+
+.privacy .bnr_content{ padding-bottom: 0; }
+
+.norm_conts .paragraph, .norm_conts .paragraph p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+.norm_conts h6 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 25px 0 12px;
+    padding: 0;
+}
+.norm_conts ul li {
+    list-style: disc;
+    margin: 0 0 5px;
+}
+.norm_conts ul { 
+    padding: 0 0 0 15px; 
+    margin: 0 0 20px;    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.secSpace.norm_conts { padding-bottom: 150px; } 
 
 
 
@@ -814,9 +909,12 @@ footer .f_links ul li a:hover { color: var(--primary); }
         font-size: 20px;
         line-height: 30px;
     }
+    .titlSpace {
+        margin-bottom: 35px;
+    }
     .mainTitle {
         font-size: 45px;
-        line-height: 40px;
+        line-height: 51px;
         margin-bottom: 20px;
     }
     .container {      
@@ -836,7 +934,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .priceBox { padding-left: 30px; padding-right: 30px;}
   
-
+    .bnr_content.innerBnr h1 {
+        font-size: 60px;
+        line-height: 68px;
+    }
 
 
 
@@ -933,7 +1034,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
         margin-bottom: 0 !important;
     }
     .mainTitle.mb-4 { margin-bottom: 0.8rem !important; }
-    .secSpace {
+    .secSpace, .secSpace.norm_conts {
         padding: 40px 0;
     }
     .ftrWrap{ padding-top: 10px; }
@@ -1087,7 +1188,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     }
     .priceBox {  padding: 58px 20px 20px 20px;  margin-bottom: 20px; }
 
-    .priceWraper .titleArea .mainTitle {   margin-bottom: 32px; }
+    .priceWraper .titleArea .mainTitle, .titlSpace {   margin-bottom: 32px; }
 
     .imgFrames.webOnly{ display: none; }
 
@@ -1103,6 +1204,48 @@ footer .f_links ul li a:hover { color: var(--primary); }
  
     .tabsSty .tab-content { margin-top: 0; }
 
+    .bnr_content.innerBnr h1 {
+        font-size: 40px;
+        line-height: 44px;
+        margin-bottom: 20px;
+    }
+    .abt_content .paragraph p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .abt_content .mainTitle{ margin-bottom: 32px; }
+
+    .teamBxs .teamImg { height: 240px; margin-bottom: 20px; }
+
+    .teamBxs .teamImg img{ min-height: 240px; }
+
+    .teamBxs h4 { font-size: 20px;  line-height: 28px; }
+    .teamBxs .paragraph {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .teamSpace { margin-bottom: 32px; }
+
+    .teamSpace .teamSpace:last-child{ margin-bottom: 0; }
+
+    .appDownload .appIcons .btnSpace img {  height: 46px !important; }
+
+    .appDownload .appIcons .btnSpace { max-width: inherit; }
+
+    .appDownload .getstartWraper.signupWrap h2{ padding: 0; margin-bottom: 20px !important; }
+
+    .appDownload .text-end { text-align: center !important; } 
+
+    .appDownload .getstartWraper {  padding-top: 24px;  padding-bottom: 24px; }
+
+    .norm_conts .paragraph, .norm_conts .paragraph p, .norm_conts ul { margin: 0 0 15px; font-size: 14px;  line-height: 18px; }
+
+    .norm_conts h6 {  font-size: 14px; font-weight: 700; margin: 20px 0 10px; }
+
+
+
+
 }
 @media all and (max-width: 580px) {
     .tabsSty .nav-tabs .nav-link{ font-size: 12px; }
@@ -1111,11 +1254,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 @media all and (max-width: 480px) {
     .bannerWraper .getstartWraper h2 strong {  display: block; }
-
     .getstartWraper.signupWrap h2{ padding-right: 2%; }
-
-   
-    
+    .appDownload .getstartWraper.signupWrap h2{ padding: 0; }
 }
 @media all and (max-width: 380px) {
     .getstartWraper.signupWrap h2{ padding-right: 0%; }

@@ -180,8 +180,7 @@ $technology = get_field('technology_section');
             <?php
 		  }
 		  ?>
-            <h3><?php echo $pricing_res['price_prefix']?><?php if($pricing_res['price_suffix']){?><strong>/<?php echo $pricing_res['price_suffix'];?></strong><?php }?>
-            </h3>
+            <h3><?php echo $pricing_res['price_prefix']?><?php if($pricing_res['price_suffix']){?><strong>/<?php echo $pricing_res['price_suffix'];?></strong><?php }?></h3>
             <h6><?php echo $pricing_res['pricing_content_title']?></h6>
             <?php echo $pricing_res['pricing_content']?> <a href="<?php echo $pricing_res['pricing_button_url']?>" class="btn btn-primary"><?php echo $pricing_res['pricing_button_text']?></a> </div>
         </div>
@@ -194,6 +193,40 @@ $technology = get_field('technology_section');
   </div>
 </section>
 <!-- PRICE_PACKAGE END -->
+<?php
+$footer = get_field('footer', 'option',true);
+?>
+
+<!-- GET_IN_TOUCH START -->
+<section class="secSpace getinwraper homeOnly">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="mainTitle mb-3"><?php echo $footer['get_in_touch_heading'];?></h2>
+        <div class="paragraph"> <?php echo $footer['get_in_touch_description'];?> </div>
+      </div>
+      <div class="col-md-6 formSpc">
+       <?php echo $footer['get_in_touch_form_shortcode'];?>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GET_IN_TOUCH END --> 
+
+<!-- SIGNUP START -->
+<section class="ftrAdjut">
+  <div class="container">
+    <div class="getstartWraper signupWrap">
+      <div class="row algTxt">
+        <div class="col-md-7 col-lg-6">
+          <h2 class="m-0"><?php echo $footer['sign_up_content'];?></h2>
+        </div>
+        <div class="col-md-5 col-lg-6 text-end"> <a class="getBtn btn" href="<?php echo $footer['signup_button_url'];?>"><?php echo $footer['signup_button_text'];?></a> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SIGNUP END -->
 <?php
 get_footer();
 ?>

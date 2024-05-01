@@ -11,47 +11,56 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<!-- BANNER-START -->
 
-	<?php if ( ! is_front_page() ) : ?>
-		<header class="entry-header alignwide">
-			<?php get_template_part( 'template-parts/header/entry-header' ); ?>
-			<?php myne_post_thumbnail(); ?>
-		</header><!-- .entry-header -->
-	<?php elseif ( has_post_thumbnail() ) : ?>
-		<header class="entry-header alignwide">
-			<?php myne_post_thumbnail(); ?>
-		</header><!-- .entry-header -->
-	<?php endif; ?>
-
-	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'myne' ) . '">',
-				'after'    => '</nav>',
-				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'myne' ),
-			)
-		);
+<section class="bannerWraper secSpace privacy">
+  <div class="container">
+    <div class="bnr_content innerBnr">
+      <h1>
+        <?php 
+		if(get_field('content_heading'))
+		{
+			echo get_field('content_heading');
+		}
+		else
+		{
+		
+		the_title();
+		}
 		?>
-	</div><!-- .entry-content -->
+      </h1>
+    </div>
+  </div>
+</section>
+<!-- BANNER-END --> 
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer default-max-width">
-			<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Post title. Only visible to screen readers. */
-					esc_html__( 'Edit %s', 'myne' ),
-					'<span class="screen-reader-text">' . get_the_title() . '</span>'
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
-</article><!-- #post-<?php the_ID(); ?> -->
+<!-- FOUNDER START -->
+<section class="secSpace norm_conts">
+  <div class="container">
+    <div class="paragraph">
+      <?php the_content();?>
+    </div>
+  </div>
+</section>
+<!-- FOUNDER END --> 
+<?php
+$footer = get_field('footer', 'option',true);
+?>
+<!-- APP-DOWNLOAD START -->
+<section class="ftrAdjut appDownload">
+  <div class="container">
+    <div class="getstartWraper signupWrap">
+      <div class="row algTxt">
+        <div class="col-md-7 col-lg-6">
+          <h2 class="m-0"><?php echo $footer['download_app_content'];?></h2>
+        </div>
+        <div class="col-md-5 col-lg-6 text-end">
+          <div class="appIcons my-2">
+            <?php echo get_app_icons();?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

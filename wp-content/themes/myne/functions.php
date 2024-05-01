@@ -697,10 +697,7 @@ add_action('wp_enqueue_scripts', 'myne_enqueue_styles_js');
 
 /*REMOVE P TAG FROM EDITOR STARTS*/
 
-function my_acf_add_local_field_groups() {
-    remove_filter('acf_the_content', 'wpautop' );
-}
-add_action('acf/init', 'my_acf_add_local_field_groups');
+
 
 /*REMOVE P TAG FROM EDITOR ENDS*/
 
@@ -738,8 +735,8 @@ else
 	$play_coming_soon ='<span>Coming soon</span>';
 }
 
-$content = '<div class="btnSpace"> <a href="'.$app_url.'" target="_blank"><img '.$app_css.' src="'.$app_icon['url'].'" alt="img">'.$app_coming_soon.'</a> </div>
-        <div class="btnSpace"> <a href="'.$play_url.'" target="_blank" ><img '.$play_css.' src="'.$play_icon['url'].'" alt="img"> '. $play_coming_soon.'</a> </div>
+$content = '<div class="btnSpace text-center"> <a href="'.$app_url.'" target="_blank"><img '.$app_css.' src="'.$app_icon['url'].'" alt="img">'.$app_coming_soon.'</a> </div>
+        <div class="btnSpace text-center"> <a href="'.$play_url.'" target="_blank" ><img '.$play_css.' src="'.$play_icon['url'].'" alt="img"> '. $play_coming_soon.'</a> </div>
       </div>';
 	  
 	  return $content;
