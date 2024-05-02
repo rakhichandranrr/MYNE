@@ -123,3 +123,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 // SCROLL-LEFT-RIGHT END
+
+// SCROLL-TO PRICE 
+$(document).ready(function(){
+  // Check if there's a hash in the URL
+  var hash = window.location.hash;
+  if(hash) {
+    // Smooth scroll to the section corresponding to the hash
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800);
+  }
+});
+// SCROLL-TO PRICE END
