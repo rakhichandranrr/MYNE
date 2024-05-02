@@ -160,7 +160,9 @@ get_header();
   </div>
 </section>
 <!-- FEATURED END --> 
-
+<?php
+$footer = get_field('footer', 'option',true);
+?>
 <!-- APP-DOWNLOAD START -->
 <section class="appDownload secSpace pt-0">
   <div class="container">
