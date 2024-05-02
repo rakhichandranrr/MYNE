@@ -9,12 +9,21 @@
 
 $header = get_field('header', 'option',true);
 $title = get_the_title();
+
+$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+
+
+if (strpos($url,'price') !== false) {
+    $cls='active';
+} else {
+    $cls='';
+}
 ?>
 
 <div class="collapse navbar-collapse alignRight" id="navbarSupportedContent">
   <ul class="navbar-nav mb-lg-0">
     <li class="nav-item"> <a class="nav-link <?php if(is_page('features')){?>active<?php } ?>" aria-current="page" href="<?php echo site_url();?>/features/">Features</a> </li>
-    <li class="nav-item"> <a class="nav-link" href="<?php echo site_url();?>/#price">Pricing</a> </li>
+    <li class="nav-item"> <a class="nav-link <?php echo $cls;?>" href="<?php echo site_url();?>/#price">Pricing</a> </li>
     <li class="nav-item"> <a class="nav-link <?php if(is_page('about-us')){?>active<?php } ?>" href="<?php echo site_url();?>/about-us/">About us</a> </li>
     <li class="nav-item dropdown btn-Link mobHide"> <a class="nav-link dropdown-toggle btn btn-login" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Log in</a>
       <ul class="dropdown-menu">
