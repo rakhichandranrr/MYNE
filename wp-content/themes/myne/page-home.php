@@ -160,7 +160,7 @@ $technology = get_field('technology_section');
 <!-- TECHNOLOGYE END --> 
 
 <!-- PRICE_PACKAGE START -->
-<section class="secSpace priceWraper">
+<section class="secSpace priceWraper" id="price">
   <div class="container">
     <div class="titleArea text-center">
       <h2 class="mainTitle"><?php echo get_field('pricing_heading');?></h2>
