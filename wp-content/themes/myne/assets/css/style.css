@@ -932,10 +932,21 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 .featuredTabs .tabsSty .aligCont { align-items: inherit; }
 
+.wpcf7-response-output {
+    background: #ff00000f;
+    color: #dc3232;
+    border: 0.5px solid #ff000052 !important;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
+.wpcf7-not-valid-tip {  font-size: 14px; }
 
+.rc-anchor-compact .rc-anchor-content { height: 45px !important; }
 
-
+.rc-anchor-compact { height: 100px  !important;  }
 
 
 /* MEDIA-QUERY START */
