@@ -948,6 +948,12 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .rc-anchor-compact { height: 100px  !important;  }
 
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b4505c !important;
+    background: #46b45029 !important;
+    color: #46b450 !important;
+}
+
 
 /* MEDIA-QUERY START */
 @media all and (max-width: 1100px) {
