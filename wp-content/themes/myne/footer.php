@@ -59,7 +59,11 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
 </body></html>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
-
+function onload() {
+      $("#contact ").click(function() {
+    grecaptcha.execute();
+});
+    }
 	
 
 $("#contact ").click(function() {
