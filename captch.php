@@ -16,3 +16,9 @@
     </form>
   </body>
 </html>
+
+<style>
+.grecaptcha-badge { 
+    visibility: hidden;
+}
+</style>
