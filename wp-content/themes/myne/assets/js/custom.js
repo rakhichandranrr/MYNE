@@ -75,3 +75,51 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+// SCROLL-LEFT-RIGHT START
+document.addEventListener('DOMContentLoaded', function() {
+  var links = document.querySelectorAll('ul.scrolRL li a');
+  
+  // Function to scroll to the right end of the container
+  function scrollToRightEnd(container) {
+      container.scrollLeft = container.scrollWidth;
+  }
+  
+  // Function to scroll to the left end of the container
+  function scrollToLeftEnd(container) {
+      container.scrollLeft = 0;
+  }
+
+  // Observer configuration
+  var observerConfig = { attributes: true, subtree: true };
+
+  // Callback function to handle changes to the class attribute
+  function classChangeCallback(mutationsList, observer) {
+      for(var mutation of mutationsList) {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+              var target = mutation.target;
+              var container = target.closest('ul.scrolRL');
+              
+              // Check if the clicked link is the first or last child and if it has the "active" class
+              var isFirstChildActive = target.parentElement === container.firstElementChild && target.classList.contains('active');
+              var isLastChildActive = target.parentElement === container.lastElementChild && target.classList.contains('active');
+
+              // Scroll to the left end if the link is the first child and active, otherwise scroll to the right end
+              if (isFirstChildActive) {
+                  scrollToLeftEnd(container);
+              } else if (isLastChildActive) {
+                  scrollToRightEnd(container);
+              }
+          }
+      }
+  }
+
+  // Create a new observer instance
+  var observer = new MutationObserver(classChangeCallback);
+
+  // Start observing the target links for changes in attributes
+  links.forEach(function(link) {
+      observer.observe(link, observerConfig);
+  });
+});
+// SCROLL-LEFT-RIGHT END
