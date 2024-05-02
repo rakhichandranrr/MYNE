@@ -167,12 +167,11 @@ get_header();
     <div class="getstartWraper signupWrap">
       <div class="row algTxt">
         <div class="col-md-7 col-lg-6">
-          <h2 class="m-0"><strong>Download the app</strong> now to supercharge your finances</h2>
+          <h2 class="m-0"><?php echo $footer['download_app_content'];?></h2>
         </div>
         <div class="col-md-5 col-lg-6 text-end">
           <div class="appIcons my-2">
-            <div class="btnSpace"> <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/appstore.png" alt="img"></a> </div>
-            <div class="btnSpace text-center"> <a href="#" target="_blank" ><img style="opacity:0.5;" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/playstore.png" alt="img"> <span>Coming soon</span></a> </div>
+            <?php echo get_app_icons();?>
           </div>
         </div>
       </div>
@@ -186,25 +185,11 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h2 class="mainTitle mb-3">Get in <strong>touch</strong></h2>
-        <div class="paragraph"> Want to learn more and hear directly from us?<br>
-          Send us your message and we'll get in touch. </div>
+        <h2 class="mainTitle mb-3"><?php echo $footer['get_in_touch_heading'];?></h2>
+        <div class="paragraph"> <?php echo $footer['get_in_touch_description'];?> </div>
       </div>
       <div class="col-md-6 formSpc">
-        <form>
-          <div class="form-group mb-3">
-            <input type="text" class="form-control white" placeholder="Full Name">
-          </div>
-          <div class="form-group mb-3">
-            <input type="email" class="form-control white" placeholder="Email address">
-          </div>
-          <div class="form-group mb-4">
-            <textarea class="form-control white" rows="3" placeholder="Message"></textarea>
-          </div>
-          <div class="form-group mb-2">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </div>
-        </form>
+        <?php echo $footer['get_in_touch_form_shortcode'];?>
       </div>
     </div>
   </div>

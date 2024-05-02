@@ -82,20 +82,7 @@ $footer = get_field('footer', 'option',true);
         <div class="paragraph"> <?php echo $footer['get_in_touch_description'];?> </div>
       </div>
       <div class="col-md-6 formSpc">
-        <form>
-          <div class="form-group mb-3">
-            <input type="text" class="form-control white" placeholder="Full Name">
-          </div>
-          <div class="form-group mb-3">
-            <input type="email" class="form-control white" placeholder="Email address">
-          </div>
-          <div class="form-group mb-4">
-            <textarea class="form-control white" rows="3" placeholder="Message"></textarea>
-          </div>
-          <div class="form-group mb-2">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </div>
-        </form>
+        <?php echo $footer['get_in_touch_form_shortcode'];?>
       </div>
     </div>
   </div>
