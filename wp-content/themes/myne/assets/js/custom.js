@@ -135,3 +135,19 @@ $(document).ready(function(){
   }
 });
 // SCROLL-TO PRICE END
+
+$(document).ready(function() {
+  var $menuLink = $('ul.navbar-nav li a#pricemenu');
+  var $section = $('#price');
+
+  $(window).on('scroll', function() {
+    var scrollPosition = $(this).scrollTop();
+    var sectionTop = $section.offset().top;
+
+    if (scrollPosition >= sectionTop - 50) { // Adjust as needed
+      $menuLink.addClass('active');
+    } else {
+      $menuLink.removeClass('active');
+    }
+  });
+});
