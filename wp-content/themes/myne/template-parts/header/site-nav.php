@@ -8,8 +8,7 @@
  */
 
 $header = get_field('header', 'option',true);
-
- $title = get_the_title();
+$title = get_the_title();
 ?>
 
 

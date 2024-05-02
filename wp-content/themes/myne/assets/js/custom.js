@@ -123,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 // SCROLL-LEFT-RIGHT END
-
 // SCROLL-TO PRICE 
 $(document).ready(function(){
   // Check if there's a hash in the URL
