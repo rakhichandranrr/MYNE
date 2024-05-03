@@ -10,8 +10,8 @@ get_header();
       <h1><?php echo get_field('banner_heading');?></h1>
       <div class="paragraph"> <?php echo get_field('banner_content');?> </div>
     </div>
-    <div class="featured_img">
-      <div class="img_space"> 
+    <div class="featured_img innerBnr">
+      <div class="img_space text-center"> 
       <?php
 	  $banner_img = get_field('banner_image');
 	  ?>
@@ -25,7 +25,7 @@ get_header();
 <section class="secSpace techWrap featuredTabs pt-0">
   <div class="container">
     <div class="titleArea text-center titleAdjust">
-      <h2 class="mainTitle mb-4"><?php echo get_field('features_heading');?></h2>
+      <h2 class="mainTitle"><?php echo get_field('features_heading');?></h2>
     </div>
     
     <!-- TABS START -->
@@ -56,7 +56,7 @@ get_header();
           
         </ul>
       </div>
-      <div class="tab-content" id="tab-content">
+      <div class="tab-content ftrOnly" id="tab-content">
       
       <?php
 		if(get_field('features'))
