@@ -309,6 +309,9 @@ video.video-banner {
     padding: 32px 48px;
     border-radius: 24px;
 }
+
+.getstartWraper.signupWrap { padding: 32px 40px; }
+ 
 .algTxt{
     display: flex;
     align-items: center;
@@ -391,9 +394,9 @@ video.video-banner {
     border-radius: 8px;
     outline: 0 !important;
     box-shadow: inherit !important;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
 }
 .getinwraper .form-control{
     background: rgba(255, 255, 255, 0.08);
@@ -422,7 +425,7 @@ video.video-banner {
     line-height: 16px; 
     border: 1px solid var(--white);
     border-radius: 8px;
-    min-height: 40px;
+    min-height: 48px;
     padding: 6px 32px;
     background-color: transparent;
     display: inline-flex;
@@ -434,9 +437,11 @@ video.video-banner {
     color: var(--black) !important;
     border-color: var(--primary) !important;
 }
+.tabsSty .contSpc .btn-primary{  min-height: 40px; }
+
 .ftrAdjut .getBtn.btn { min-width: 200px; }
 
-.homeOnly{ padding-bottom: 190px; }
+.homeOnly{ padding-bottom: 140px; }
 
 .ftrAdjut{
     padding: 80px 0 25px;
@@ -455,19 +460,19 @@ footer{
 }
 
 footer .f_logo img {
-    max-height: 56px;
+    max-height: 48px;
     width: auto;
 }
 .f_about h6{
-    font-size: 20px;
+    font-size: 18px;
     color: var(--White, #FFF);
     font-style: normal;
     font-weight: 500;
-    line-height: 28px; 
+    line-height: 24px;
 }
 .f_about .appIcons .btnSpace{ text-align: center; }
 
-.footer_wrapper .appIcons .btnSpace img {  height: 38px; }
+.footer_wrapper .appIcons .btnSpace img {  height: 40px; }
 
 .footerBtm{
     border-top: 0.5px solid rgb(255 255 255 / 21%);
@@ -477,10 +482,10 @@ footer .f_logo img {
     align-items: center;
 }
 .footerBtm .copyrights{
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; 
+    line-height: 16px; 
 }
 .socialFtr ul li{
     list-style: none;
@@ -505,12 +510,12 @@ footer .f_logo img {
 
 footer .f_links ul {
     color: var(--white);
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
+    font-weight: 300;
+    line-height: 24px;
 }
-footer .f_links ul li{ margin-bottom: 25px; }
+footer .f_links ul li{ margin-bottom: 24px; }
 
 footer .f_links ul li:last-child{ margin-bottom: 0; }
 

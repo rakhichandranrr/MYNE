@@ -40,7 +40,7 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
         </ul>
       </div>
     </div>
-    <div class="footerBtm pt-3 mt-3">
+    <div class="footerBtm pt-3 mt-4">
       <div class="copyrights"> Copyright <i class="bi bi-c-circle"></i> <?php echo date('Y');?> myne. All rights reserved. </div>
       <div class="socialFtr">
         <ul>
