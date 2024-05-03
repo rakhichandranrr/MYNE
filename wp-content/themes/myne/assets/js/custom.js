@@ -173,7 +173,7 @@ $(document).ready(function() {
   backSpeed: 0,
   startDelay: 0,
   cursorChar: '_',
-  shuffle: true,
+  shuffle: false,
   smartBackspace: false,
   loop: true,
   loopCount: Infinity
