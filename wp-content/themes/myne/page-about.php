@@ -77,7 +77,7 @@ $why_choose_myne = get_field('why_choose_myne');
     <div class="container">
       <div class="titleArea">
         <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading',20);?></h2>
-        <div class="paragraph"> <?php echo get_field('why_choose_myne_short_description');?></div>
+        <div class="paragraph"> <?php echo get_field('why_choose_myne_short_description',20);?></div>
       </div>
       <div class="boxWraper">
         <div class="row gridPad">
@@ -89,10 +89,10 @@ $why_choose_myne = get_field('why_choose_myne');
       ?>
           <div class="col-md-6 col-lg-3 gridPad">
             <div class="chooseBx">
-              <div class="imgArea"> <img src="<?php echo $why_choose_myne_res['why_choose_icon']['url'];?>" alt="icon"> </div>
+              <div class="imgArea"> <img src="<?php echo $why_choose_myne_res['why_choose_icon',20]['url'];?>" alt="icon"> </div>
               <div class="contArea">
                 <h4><?php echo $why_choose_myne_res['why_choose_heading'];?></h4>
-                <div class="paragraph"> <?php echo $why_choose_myne_res['why_choose_content'];?> </div>
+                <div class="paragraph"> <?php echo $why_choose_myne_res['why_choose_content',20];?> </div>
               </div>
             </div>
           </div>
