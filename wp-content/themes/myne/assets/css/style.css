@@ -1389,7 +1389,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     }
     .tabsSty  .scrollDiv .nav.nav-tabs{  width: 500px;}
     .tabsSty .scrollDiv .nav-tabs .nav-item:first-child, .tabsSty .scrollDiv .nav-tabs .nav-item:last-child{ border-radius: 0; }
-    video.video-banner { max-height: 215px; }
+    /* video.video-banner { max-height: 215px; } */
 
 }
 @media all and (max-width: 380px) {
@@ -1397,7 +1397,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 
 @media all and (max-width: 360px) {
-    .bnr_content h1 {  font-size: 40px; line-height: 44px; }
+    .bnr_content h1 {  font-size: 33px; line-height: 40px; }
     .getstartWraper h2 { font-size: 28px; }
     .mainTitle {  font-size: 32px;  line-height: 34px; }
     .priceBox h3 { font-size: 46px; }
