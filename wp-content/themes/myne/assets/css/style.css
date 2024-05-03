@@ -1369,8 +1369,12 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .featuredTabs .vertTab h6 { font-size: 14px;  line-height: 18px; }
 
     .featuredTabs .vertTab .tabLine { padding: 0 0 30px; }
+
     .bnr_content.innerBnr h1 strong{ display: inline-block; }
 
+    .abt_content .spcWeb { padding-left: calc(var(--bs-gutter-x)* .5); }
+
+    
 }
 @media all and (max-width: 580px) {
     .tabsSty .nav-tabs .nav-link{ font-size: 12px; }
