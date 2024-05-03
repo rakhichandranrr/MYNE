@@ -422,7 +422,7 @@ video.video-banner {
     line-height: 16px; 
     border: 1px solid var(--white);
     border-radius: 8px;
-    min-height: 48px;
+    min-height: 40px;
     padding: 6px 32px;
     background-color: transparent;
     display: inline-flex;
@@ -432,6 +432,7 @@ video.video-banner {
 .btn-primary:hover, .btn-primary:focus{
     background-color: var(--primary) !important;
     color: var(--black) !important;
+    border-color: var(--primary) !important;
 }
 .ftrAdjut .getBtn.btn { min-width: 200px; }
 
@@ -524,13 +525,13 @@ footer .f_links ul li a:hover { color: var(--primary); }
     background: rgba(255, 255, 255, 0.10);
     padding: 24px;
     color: var(--white);
-    min-height: 340px;
+    min-height: 288px;
 }
 .chooseBx .contArea h4{
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 28px;
     margin: 10px 0;
     padding: 0;
 }
@@ -541,10 +542,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .secSpace.whyChoose{ padding-top: 40px; }
 
 .chooseBx .contArea .paragraph{
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px; 
+    line-height: 20px; 
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -579,10 +580,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding: 5px 15px;
     background: var(--primary);
     color: var(--black);
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 18px;
     width: 100%;
     position: absolute;
     left: 0;
@@ -591,7 +592,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     min-height: 38px;
 }
 .priceBox h3{
-    font-size: 76px;
+    font-size: 56px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -606,11 +607,11 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding-left: 10px;
 }
 .priceBox h6{
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px; 
-    margin: 18px 0;
+    line-height: 28px; 
+    margin: 16px 0;
 }
 .priceBox ul{
     list-style: none;
@@ -618,43 +619,46 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding: 0;
 }
 .priceBox ul li{
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    padding-left: 38px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-left: 30px;
     position: relative;
-    margin: 20px 0;
+    margin: 16px 0;
 }
 .priceBox ul li::before{
     content: ' ';
     background-image: url(../images/icons/tick.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     position: absolute;
     left: 0;
     top: 2px;
 }
-.priceBox .btn-primary{ width: 100%; font-size: 18px; min-height: 56px; margin: 10px 0 0;}
+.priceBox .btn-primary{ width: 100%; font-size: 16px; min-height: 48px; margin: 10px 0 0;}
 
 .priceWraper .titleArea .mainTitle strong{ display: block; }
 
-.priceWraper .titleArea .mainTitle{ margin-bottom: 64px; }
+.priceWraper .titleArea .mainTitle{ margin-bottom: 48px; }
 
 .titlSpace{ margin-bottom: 64px; }
 
-.tabFrame, .tabFrame::before{
+.prdctList.tab-pane .contSpc {  padding-left: 8%; }
+
+.tabFrame{
     background-image: url(../images/others/frame-tab.png);
     background-repeat: no-repeat !important;
     background-size: cover !important;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 26px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
 }
 .tabFrame::before{
     background-image: url(../images/others/frame-tab1.png);
@@ -667,21 +671,23 @@ footer .f_links ul li a:hover { color: var(--primary); }
     content:  ' ';
 }
 .tabFrame, .tabFrame::before{
-    width: 333px;
-    height: 495px;
+    width: 502px;
+    height: 339px;
 }
 
 .imgFrames{ position: relative; text-align: center; }
 
 .frame_shadow{
     position: absolute;
-    left: 0;
-    top: -60px;
+    left: 9%;
+    top: -79px;
     max-width: 100%;
-    opacity: 0.8;
-    z-index: -1;
+    opacity: 1;
+    z-index: 0;
+    width: 670px;
+    height: 520px;
 }
-.tabFrame .prdImg{ min-height: 436px; width: 100%; object-fit: cover; }
+.tabFrame .prdImg{ min-height: 315px; width: 100%; object-fit: cover; }
 
 .tabsSty .aligCont{
     display: flex;
