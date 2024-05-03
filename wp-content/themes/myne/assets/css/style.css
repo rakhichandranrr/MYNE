@@ -1019,8 +1019,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
         line-height: 70px;
     }
     .bnr_content h6 {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 26px;
     }
     header ul.navbar-nav li {
         padding: 0 16px;
@@ -1033,8 +1033,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
         margin-bottom: 35px;
     }
     .mainTitle {
-        font-size: 45px;
-        line-height: 51px;
+        font-size: 38px;
         margin-bottom: 20px;
     }
     .container {      
@@ -1046,12 +1045,18 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .priceBox { padding-left: 30px; padding-right: 30px;}
   
     .bnr_content.innerBnr h1 {
-        font-size: 60px;
-        line-height: 68px;
+        font-size: 50px;
+        line-height: 60px;
     }
     .tabsSty .tab-content.vertTab-cont { margin: 0 0; }
     .imgFrames.webOnly {  margin-bottom: 30px; }
 
+    .featuredTabs .frame_shadow {
+        left: 12%;
+        width: 638px;
+        height: 456px;
+    }
+    .tabsSty .tab-content {  margin-top: 10px; }
 
 }
 @media all and (max-width: 767px) {
@@ -1312,7 +1317,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .techWrap .titleArea { margin-bottom: 40px; }
  
-    .tabsSty .tab-content { margin-top: 0; }
+    .tabsSty .tab-content, .tabsSty .tab-content.ftrOnly { margin-top: 0; }
 
     .bnr_content.innerBnr h1 {
         font-size: 40px;
