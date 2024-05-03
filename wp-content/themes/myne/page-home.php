@@ -58,106 +58,112 @@ $technology = get_field('technology_section');
 </section> -->
 <!-- FEATURE END --> 
 
-<!-- WHY_CHOOSE START -->
-<section class="secSpace whyChoose">
-  <div class="container">
-    <div class="titleArea">
-      <h2 class="mainTitle mb-4"><?php echo get_field('why_choose_myne_heading');?></h2>
-      <div class="paragraph"> <?php echo get_field('why_choose_myne_short_description');?></div>
-    </div>
-    <div class="boxWraper">
-      <div class="row gridPad">
-        <?php
-		if($why_choose_myne)
-		{
-			foreach($why_choose_myne as $why_choose_myne_res)
-			{
-		?>
-        <div class="col-md-6 col-lg-3 gridPad">
-          <div class="chooseBx">
-            <div class="imgArea"> <img src="<?php echo $why_choose_myne_res['why_choose_icon']['url'];?>" alt="icon"> </div>
-            <div class="contArea">
-              <h4><?php echo $why_choose_myne_res['why_choose_heading'];?></h4>
-              <div class="paragraph"> <?php echo $why_choose_myne_res['why_choose_content'];?> </div>
-            </div>
-          </div>
-        </div>
-        <?php
-			}
-		}
-		?>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- WHY_CHOOSE END --> 
+<div class="newShadow">
 
-<!-- TECHNOLOGY START -->
-<section class="secSpace techWrap">
-  <div class="container">
-    <div class="titleArea text-center">
-      <h2 class="mainTitle mb-4"><?php echo $technology['technology_heading'];?></h2>
-      <div class="paragraph"> <?php echo $technology['technology_short_description'];?> </div>
-    </div>
-    
-    <!-- TABS START -->
-    <div class="tabsSty">
-      <ul class="nav nav-fill nav-tabs" role="tablist">
-        <?php
-				   if($technology['technologies'])
-				   {
-					   $i = 0;
-					   foreach($technology['technologies'] as $technology_res)
-					   {
-					   ?>
-        <li class="nav-item" role="presentation"> <a class="nav-link <?php if($i==0){?>active<?php }?>" id="fill-tab-<?php echo $i;?>" data-bs-toggle="tab" href="#fill-tabpanel-<?php echo $i;?>" role="tab" aria-controls="fill-tabpanel-<?php echo $i;?>" aria-selected="true"> <span class="imgSpc"><img src="<?php echo $technology_res['icon']['url'];?>" alt="icon"></span> <?php echo $technology_res['title'];?> </a> </li>
-        <?php
-					$i++;
-					   }
-				   }
-				   ?>
-      </ul>
-      <div class="tab-content py-5" id="tab-content">
-        <?php
-				   if($technology['technologies'])
-				   {
-					   $i = 0;
-					   foreach($technology['technologies'] as $technology_res)
-					   {
-					   ?>
-        <div class="prdctList tab-pane <?php if($i==0){?>active <?php }?>" id="fill-tabpanel-<?php echo $i;?>" role="tabpanel" aria-labelledby="fill-tab-<?php echo $i;?>">
-          <div class="row aligCont">
-            <div class="col-md-12 col-lg-4">
-              <div class="paragraph"> <?php echo $technology_res['content'];?> </div>
-              <a href="<?php echo $technology_res['button_url'];?>" class="btn btn-primary my-4"><?php echo $technology_res['button_text'];?></a> </div>
-            <div class="col-md-12 col-lg-8">
-              <div class="imgFrames webOnly">
-                <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_web']['url'];?>" alt="image"> </div>
-                <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div>
-              
-              <!-- MOBILE-VIEW START -->
-              <div class="imgFrames mobOnly">
-                <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_mobile']['url'];?>" alt="image"> </div>
+  <!-- TECHNOLOGY START -->
+  <section class="secSpace techWrap">
+    <div class="container">
+      <div class="titleArea text-center">
+        <h2 class="mainTitle mb-4"><?php echo $technology['technology_heading'];?></h2>
+        <div class="paragraph"> <?php echo $technology['technology_short_description'];?> </div>
+      </div>
+      
+      <!-- TABS START -->
+      <div class="tabsSty">
+        <ul class="nav nav-fill nav-tabs" role="tablist">
+          <?php
+            if($technology['technologies'])
+            {
+              $i = 0;
+              foreach($technology['technologies'] as $technology_res)
+              {
+              ?>
+          <li class="nav-item" role="presentation"> <a class="nav-link <?php if($i==0){?>active<?php }?>" id="fill-tab-<?php echo $i;?>" data-bs-toggle="tab" href="#fill-tabpanel-<?php echo $i;?>" role="tab" aria-controls="fill-tabpanel-<?php echo $i;?>" aria-selected="true"> <span class="imgSpc"><img src="<?php echo $technology_res['icon']['url'];?>" alt="icon"></span> <?php echo $technology_res['title'];?> </a> </li>
+          <?php
+            $i++;
+              }
+            }
+            ?>
+        </ul>
+        <div class="tab-content py-5" id="tab-content">
+          <?php
+            if($technology['technologies'])
+            {
+              $i = 0;
+              foreach($technology['technologies'] as $technology_res)
+              {
+              ?>
+          <div class="prdctList tab-pane <?php if($i==0){?>active <?php }?>" id="fill-tabpanel-<?php echo $i;?>" role="tabpanel" aria-labelledby="fill-tab-<?php echo $i;?>">
+            <div class="row aligCont">
+              <div class="col-md-12 col-lg-4">
+                <div class="paragraph"> <?php echo $technology_res['content'];?> </div>
+                <a href="<?php echo $technology_res['button_url'];?>" class="btn btn-primary my-4"><?php echo $technology_res['button_text'];?></a> </div>
+              <div class="col-md-12 col-lg-8">
+                <div class="imgFrames webOnly">
+                  <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_web']['url'];?>" alt="image"> </div>
+                  <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div>
+                
+                <!-- MOBILE-VIEW START -->
+                <div class="imgFrames mobOnly">
+                  <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_mobile']['url'];?>" alt="image"> </div>
+                </div>
+                <!-- MOBILE-VIEW END --> 
+                
               </div>
-              <!-- MOBILE-VIEW END --> 
-              
             </div>
           </div>
+          <!-- TAB-1 END -->
+          
+          <?php
+            $i++;
+              }
+            }
+            ?>
         </div>
-        <!-- TAB-1 END -->
-        
-        <?php
-					$i++;
-					   }
-				   }
-				   ?>
+      </div>
+      <!-- TABS END --> 
+      
+    </div>
+  </section>
+  <!-- TECHNOLOGYE END --> 
+
+
+  <!-- WHY_CHOOSE START -->
+  <section class="secSpace whyChoose">
+    <div class="container">
+      <div class="titleArea">
+        <h2 class="mainTitle mb-4"><?php echo get_field('why_choose_myne_heading');?></h2>
+        <div class="paragraph"> <?php echo get_field('why_choose_myne_short_description');?></div>
+      </div>
+      <div class="boxWraper">
+        <div class="row gridPad">
+          <?php
+      if($why_choose_myne)
+      {
+        foreach($why_choose_myne as $why_choose_myne_res)
+        {
+      ?>
+          <div class="col-md-6 col-lg-3 gridPad">
+            <div class="chooseBx">
+              <div class="imgArea"> <img src="<?php echo $why_choose_myne_res['why_choose_icon']['url'];?>" alt="icon"> </div>
+              <div class="contArea">
+                <h4><?php echo $why_choose_myne_res['why_choose_heading'];?></h4>
+                <div class="paragraph"> <?php echo $why_choose_myne_res['why_choose_content'];?> </div>
+              </div>
+            </div>
+          </div>
+          <?php
+        }
+      }
+      ?>
+        </div>
       </div>
     </div>
-    <!-- TABS END --> 
-    
-  </div>
-</section>
-<!-- TECHNOLOGYE END --> 
+  </section>
+  <!-- WHY_CHOOSE END --> 
+
+</div> <!-- newShadow end -->
+
 
 <!-- PRICE_PACKAGE START -->
 <section class="secSpace priceWraper" id="price">
