@@ -15,10 +15,10 @@ $why_choose_myne = get_field('why_choose_myne',20);
     </div>
     <div class="abt_content secSpace pb-0">
       <div class="row">
-        <div class="col-md-5 col-lg-5">
+        <div class="col-md-5 col-lg-4">
           <h2 class="mainTitle"><?php echo get_field('content_heading');?></h2>
         </div>
-        <div class="col-md-7 col-lg-7">
+        <div class="col-md-7 col-lg-8 spcWeb">
           <div class="paragraph"> <?php echo get_field('content');?> </div>
         </div>
       </div>
@@ -73,7 +73,7 @@ $why_choose_myne = get_field('why_choose_myne',20);
 <!-- FOUNDER END --> 
 
 <!-- WHY_CHOOSE START -->
-  <section class="secSpace whyChoose">
+  <section class="secSpace whyChoose inner homeOnly">
     <div class="container">
       <div class="titleArea">
         <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading',20);?></h2>
