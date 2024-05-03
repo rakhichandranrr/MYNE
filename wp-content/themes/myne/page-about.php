@@ -2,7 +2,7 @@
 /*Template Name: About*/
 get_header();
 
-$why_choose_myne = get_field('why_choose_myne');
+$why_choose_myne = get_field('why_choose_myne',20);
 
 ?>
 <!-- BANNER-START -->
