@@ -101,7 +101,7 @@ header {
 }
 header .nav-link {
     color: var(--white);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     padding: 0 !important;
@@ -223,31 +223,35 @@ body.offcanvas-active{
 
 .videoWraper{
     position: relative;
+    text-align: center;
 }
 video.video-banner {
     width: 100%;
-    max-width: 100%;
-    height: 100%;
+    max-width: 1024px;
+    height: 574px;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border-radius: 18px;
-    max-height: 750px;
+    max-height: 574px;
 }
+
+.bannerWraper .getstartWrape.mt-5{ margin-top: 40px !important; }
+
 .bannerWraper {
     background: linear-gradient(58deg, #000 19.15%, #2EE1D5 198.11%);
 }
 .bnr_content{ 
     color: var(--white); 
     text-align: center; 
-    padding: 80px 0;
+    padding: 50px 0 40px;
 }
 
 .bnr_content h1{
-    font-size: 96px;
+    font-size: 72px;
     font-style: normal;
     font-weight: 600;
-    line-height: 108px; 
+    line-height: 80px; 
     margin: 0 0 20px;
     padding: 0;
 }
@@ -256,11 +260,11 @@ video.video-banner {
     color: var(--primary);
 }
 .bnr_content h6{
-    font-size: 40px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 56px;
-    margin: 5px 0;
+    line-height: 32px;
+    margin: 0;
     padding: 0;
 }
 .bnr_content .paragraph{
@@ -283,7 +287,7 @@ video.video-banner {
 }
 .appIcons .btnSpace { display: inline-flex; margin: 0px 4px; }
 
-.appIcons .btnSpace img { height: 52px; width: auto; }
+.appIcons .btnSpace img { height: 48px; width: auto; }
 
 .appIcons .btnSpace span { 
     display: block;  
@@ -302,7 +306,7 @@ video.video-banner {
 .getstartWraper{
     background-color: var(--secondary);
     color: var(--white);
-    padding: 40px;
+    padding: 32px 48px;
     border-radius: 24px;
 }
 .algTxt{
@@ -310,10 +314,11 @@ video.video-banner {
     align-items: center;
 }
 .getstartWraper h2{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     margin: 0px 0 15px;
     padding: 0;
+    line-height: 40px;
 }
 .getstartWraper h2 strong{ font-weight: 600; color: var(--primary);}
 
@@ -335,7 +340,7 @@ video.video-banner {
 }
 
 .getstartWraper h6{
-    font-size: 28px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -376,7 +381,7 @@ video.video-banner {
 }
 
 .secSpace{
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .form-control{
