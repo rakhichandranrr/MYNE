@@ -76,7 +76,7 @@ $why_choose_myne = get_field('why_choose_myne');
   <section class="secSpace whyChoose">
     <div class="container">
       <div class="titleArea">
-        <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading');?></h2>
+        <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading',20);?></h2>
         <div class="paragraph"> <?php echo get_field('why_choose_myne_short_description');?></div>
       </div>
       <div class="boxWraper">
