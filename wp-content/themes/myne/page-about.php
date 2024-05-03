@@ -9,7 +9,7 @@ $why_choose_myne = get_field('why_choose_myne');
 
 <section class="bannerWraper secSpace bgRemove">
   <div class="container">
-    <div class="bnr_content innerBnr pb-0">
+    <div class="bnr_content innerBnr">
       <h1><?php echo get_field('banner_heading');?></h1>
       <div class="paragraph"><?php echo get_field('banner_content');?></div>
     </div>
@@ -72,7 +72,7 @@ $why_choose_myne = get_field('why_choose_myne');
 </section> -->
 <!-- FOUNDER END --> 
 
-  <!-- WHY_CHOOSE START -->
+<!-- WHY_CHOOSE START -->
   <section class="secSpace whyChoose">
     <div class="container">
       <div class="titleArea">
@@ -104,14 +104,14 @@ $why_choose_myne = get_field('why_choose_myne');
       </div>
     </div>
   </section>
-  <!-- WHY_CHOOSE END --> 
+<!-- WHY_CHOOSE END --> 
 
 <?php
 $footer = get_field('footer', 'option',true);
 ?>
 
 <!-- GET_IN_TOUCH START -->
-<section class="secSpace getinwraper homeOnly">
+<!-- <section class="secSpace getinwraper homeOnly">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -123,7 +123,7 @@ $footer = get_field('footer', 'option',true);
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- GET_IN_TOUCH END --> 
 
 <!-- APP-DOWNLOAD START -->
