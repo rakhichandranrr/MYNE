@@ -64,7 +64,7 @@ $technology = get_field('technology_section');
   <section class="secSpace techWrap">
     <div class="container">
       <div class="titleArea text-center">
-        <h2 class="mainTitle mb-4"><?php echo $technology['technology_heading'];?></h2>
+        <h2 class="mainTitle mb-3"><?php echo $technology['technology_heading'];?></h2>
         <div class="paragraph"> <?php echo $technology['technology_short_description'];?> </div>
       </div>
       
