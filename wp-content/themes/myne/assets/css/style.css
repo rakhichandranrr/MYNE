@@ -986,6 +986,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .newShadow{
     background: linear-gradient(44deg, #000 32.13%, #2EE1D5 237.89%);
 }
+.secSpace.whyChoose.inner{ padding-top: 60px; }
+
+.abt_content .spcWeb{ padding-left: 4%; }
 
 
 
