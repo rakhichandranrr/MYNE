@@ -95,9 +95,10 @@ $technology = get_field('technology_section');
               ?>
           <div class="prdctList tab-pane <?php if($i==0){?>active <?php }?>" id="fill-tabpanel-<?php echo $i;?>" role="tabpanel" aria-labelledby="fill-tab-<?php echo $i;?>">
             <div class="row aligCont">
-              <div class="col-md-12 col-lg-4">
+              <div class="col-md-12 col-lg-4 contSpc">
                 <div class="paragraph"> <?php echo $technology_res['content'];?> </div>
-                <a href="<?php echo $technology_res['button_url'];?>" class="btn btn-primary my-4"><?php echo $technology_res['button_text'];?></a> </div>
+                <a href="<?php echo $technology_res['button_url'];?>" class="btn btn-primary my-4"><?php echo $technology_res['button_text'];?></a> 
+              </div>
               <div class="col-md-12 col-lg-8">
                 <div class="imgFrames webOnly">
                   <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_web']['url'];?>" alt="image"> </div>
@@ -132,7 +133,7 @@ $technology = get_field('technology_section');
   <section class="secSpace whyChoose">
     <div class="container">
       <div class="titleArea">
-        <h2 class="mainTitle mb-4"><?php echo get_field('why_choose_myne_heading');?></h2>
+        <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading');?></h2>
         <div class="paragraph"> <?php echo get_field('why_choose_myne_short_description');?></div>
       </div>
       <div class="boxWraper">
