@@ -990,6 +990,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .abt_content .spcWeb{ padding-left: 4%; }
 
+.abt_content .spcWeb .paragraph p:last-child{ margin-bottom: 0; }
+
 
 
 
@@ -1013,8 +1015,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 @media all and (max-width: 991px) {
 
     .bnr_content h1 {
-        font-size: 76px;
-        line-height: 76px;
+        font-size: 56px;
+        line-height: 70px;
     }
     .bnr_content h6 {
         font-size: 28px;
@@ -1023,8 +1025,6 @@ footer .f_links ul li a:hover { color: var(--primary); }
     header ul.navbar-nav li {
         padding: 0 16px;
     }
-    header .nav-link { font-size: 16px; }
-    header ul.navbar-nav li.nav-item.dropdown.btn-Link {  margin-left: 15px; }
     .bnr_content .paragraph, .getstartWraper h6 {
         font-size: 20px;
         line-height: 30px;
@@ -1040,18 +1040,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .container {      
         padding: 0 16px;
     }
-    .paragraph {
-        font-size: 18px;
-        line-height: 26px;
-    }
     .whyChoose .chooseBx {
         margin-bottom: 20px;
     }
-
-    .priceBox h3 { font-size: 65px; }
-
-    .priceBox h6 {  font-size: 22px; line-height: 24px; }
-
     .priceBox { padding-left: 30px; padding-right: 30px;}
   
     .bnr_content.innerBnr h1 {
