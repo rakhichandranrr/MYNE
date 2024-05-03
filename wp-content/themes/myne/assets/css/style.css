@@ -811,14 +811,14 @@ footer .f_links ul li a:hover { color: var(--primary); }
     display: block;
 }
 .abt_content .paragraph {
-    font-size: 24px;
+    font-size: 20px;
     line-height: inherit;
 }
 .abt_content .paragraph p{
     padding: 0;
     margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
 }
 .teamBxs .teamImg {
     border-radius: 20px;

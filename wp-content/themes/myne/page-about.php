@@ -4,9 +4,9 @@ get_header();
 ?>
 <!-- BANNER-START -->
 
-<section class="bannerWraper secSpace">
+<section class="bannerWraper secSpace bgRemove">
   <div class="container">
-    <div class="bnr_content innerBnr">
+    <div class="bnr_content innerBnr pb-0">
       <h1><?php echo get_field('banner_heading');?></h1>
       <div class="paragraph"><?php echo get_field('banner_content');?></div>
     </div>
@@ -26,7 +26,7 @@ get_header();
 <!-- BANNER-END --> 
 
 <!-- FOUNDER START -->
-<section class="secSpace teamWraper">
+<!-- <section class="secSpace teamWraper">
   <div class="container">
     <div class="titleArea titlSpace">
       <h2 class="mainTitle"><?php echo get_field('founder_heading');?></h2>
@@ -66,8 +66,42 @@ get_header();
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- FOUNDER END --> 
+
+  <!-- WHY_CHOOSE START -->
+  <section class="secSpace whyChoose">
+    <div class="container">
+      <div class="titleArea">
+        <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading');?></h2>
+        <div class="paragraph"> <?php echo get_field('why_choose_myne_short_description');?></div>
+      </div>
+      <div class="boxWraper">
+        <div class="row gridPad">
+          <?php
+      if($why_choose_myne)
+      {
+        foreach($why_choose_myne as $why_choose_myne_res)
+        {
+      ?>
+          <div class="col-md-6 col-lg-3 gridPad">
+            <div class="chooseBx">
+              <div class="imgArea"> <img src="<?php echo $why_choose_myne_res['why_choose_icon']['url'];?>" alt="icon"> </div>
+              <div class="contArea">
+                <h4><?php echo $why_choose_myne_res['why_choose_heading'];?></h4>
+                <div class="paragraph"> <?php echo $why_choose_myne_res['why_choose_content'];?> </div>
+              </div>
+            </div>
+          </div>
+          <?php
+        }
+      }
+      ?>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- WHY_CHOOSE END --> 
 
 <?php
 $footer = get_field('footer', 'option',true);
