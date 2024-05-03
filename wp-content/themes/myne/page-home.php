@@ -15,7 +15,7 @@ $technology = get_field('technology_section');
 <section class="bannerWraper secSpace">
   <div class="container">
   <div class="bnr_content">
-    <h1><?php echo $banner['banner_heading'];?></h1>
+    <!-- <h1><?php echo $banner['banner_heading'];?></h1> -->
     <h1>Are your <strong id="typed" style="white-space: pre"></strong></h1> 
     <h6><?php echo $banner['banner_sub_heading'];?></h6>
     <div class="appIcons mt-4"> <?php echo get_app_icons();?></div>
