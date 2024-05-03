@@ -870,15 +870,16 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .norm_conts .paragraph, .norm_conts .paragraph p {
     font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
+    font-weight: 300;
     margin: 0 0 20px;
 }
+.norm_conts .paragraph p{ line-height: 20px; }
+
 .norm_conts h6 {
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 20px;
     margin: 25px 0 12px;
     padding: 0;
 }
@@ -894,7 +895,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     line-height: 24px; 
 }
 
-.secSpace.norm_conts { padding-bottom: 150px; } 
+.secSpace.norm_conts { padding-bottom: 150px; padding-top: 48px; } 
 
 .bgRemove{ background: transparent; }
 
