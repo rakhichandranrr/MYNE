@@ -961,7 +961,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .bannerWraper .getstartWraper.mt-5 {
     margin-top: 40px !important;
 }
-
+.newShadow{
+    background: linear-gradient(44deg, #000 32.13%, #2EE1D5 237.89%);
+}
 
 
 
