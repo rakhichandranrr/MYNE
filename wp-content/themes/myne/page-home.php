@@ -46,7 +46,7 @@ $technology = get_field('technology_section');
 <!-- BANNER-END --> 
 
 <!-- FEATURE START -->
-<section class="secSpace ftrWrap">
+<!-- <section class="secSpace ftrWrap">
   <div class="container">
     <div class="titleArea">
       <h2 class="mainTitle mb-4"><?php echo $feature['feature_heading'];?></h2>
@@ -55,7 +55,7 @@ $technology = get_field('technology_section');
     <div class="imgBg img_space mt-3 mb-5"> <img src="<?php echo $feature['feature_image']['url'];?>" alt="img"> </div>
     <div class="appIcons my-2 text-center"> <?php echo get_app_icons();?> </div>
   </div>
-</section>
+</section> -->
 <!-- FEATURE END --> 
 
 <!-- WHY_CHOOSE START -->
