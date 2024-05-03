@@ -1,6 +1,9 @@
 <?php 
 /*Template Name: About*/
 get_header();
+
+$why_choose_myne = get_field('why_choose_myne');
+
 ?>
 <!-- BANNER-START -->
 
