@@ -89,7 +89,7 @@ $why_choose_myne = get_field('why_choose_myne');
       ?>
           <div class="col-md-6 col-lg-3 gridPad">
             <div class="chooseBx">
-              <div class="imgArea"> <img src="<?php echo $why_choose_myne_res['why_choose_icon',20]['url'];?>" alt="icon"> </div>
+              <div class="imgArea"> <img src="<?php echo $why_choose_myne_res['why_choose_icon']['url'];?>" alt="icon"> </div>
               <div class="contArea">
                 <h4><?php echo $why_choose_myne_res['why_choose_heading'];?></h4>
                 <div class="paragraph"> <?php echo $why_choose_myne_res['why_choose_content',20];?> </div>
