@@ -992,6 +992,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .abt_content .spcWeb .paragraph p:last-child{ margin-bottom: 0; }
 
+.typed-cursor{
+    color: var(--primary);
+}
 
 
 
