@@ -873,6 +873,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     font-weight: 300;
     margin: 0 0 20px;
 }
+.norm_conts .paragraph strong, .norm_conts .paragraph p strong { font-weight: 600; }
+
 .norm_conts .paragraph p{ line-height: 20px; }
 
 .norm_conts h6 {
