@@ -586,6 +586,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding: 60px 38px 38px 38px;
     color: var(--white);
     position: relative;
+    min-height: 460px;
     overflow: hidden;
 }
 .priceBox .offerLabel {
@@ -1017,8 +1018,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .priceArea .priceBox h4 {
     font-size: 24px;
     font-weight: 400;
+    line-height: 32px;
 }
-.priceArea .priceBox:first-child h4{ display: none; }
+.priceArea .col-md-6:first-child h4{ display: none; }
 
 
 
