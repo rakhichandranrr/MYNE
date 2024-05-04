@@ -86,12 +86,12 @@ get_header();
                     <div class="tabFrame webImg"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
                     <!-- <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div> -->
                   
-                  <!-- MOBILE-VIEW START -->
-                  <!-- <div class="imgFrames mobOnly">
-                    <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_mobile']['url'];?>" alt="image"> </div>
-                  </div> -->
-                  <!-- MOBILE-VIEW END --> 
-                  
+                    <!-- MOBILE-VIEW START -->
+                    <!-- <div class="imgFrames mobOnly">
+                      <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_mobile']['url'];?>" alt="image"> </div>
+                    </div> -->
+                    <!-- MOBILE-VIEW END --> 
+                    </div>
                 </div>
                 
                 <?php
