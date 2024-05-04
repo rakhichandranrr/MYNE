@@ -1012,6 +1012,14 @@ footer .f_links ul li a:hover { color: var(--primary); }
     position: relative;
     z-index: 1;
 }
+.txtHeight { min-height: 80px; }
+
+.priceArea .priceBox h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.priceArea .priceBox:first-child h4{ display: none; }
+
 
 
 /* MEDIA-QUERY START */
@@ -1390,7 +1398,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .abt_content .spcWeb { padding-left: calc(var(--bs-gutter-x)* .5); }
 
-    
+    .txtHeight { min-height: 100px; }
+
 }
 @media all and (max-width: 580px) {
     .tabsSty .nav-tabs .nav-link{ font-size: 12px; }

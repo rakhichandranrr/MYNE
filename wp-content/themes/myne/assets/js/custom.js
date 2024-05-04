@@ -175,7 +175,7 @@ $(document).ready(function() {
   typeSpeed: 80,
   backSpeed: 0,
   startDelay: 10,
-  cursorChar: '_',
+  cursorChar: ' ',
   shuffle: false,
   smartBackspace: false,
   loop: true,
