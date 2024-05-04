@@ -84,8 +84,8 @@ get_header();
                   <div class="imgFrames">
                   
                     <div class="webImg"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
-                    <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
-                    <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div>
+                    <!-- <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div> -->
+                    <!-- <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div> -->
                   
                   <!-- MOBILE-VIEW START -->
                   <!-- <div class="imgFrames mobOnly">
