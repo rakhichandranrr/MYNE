@@ -163,10 +163,14 @@ $(document).ready(function() {
  // Typed.js (Type_writter effcet)
  var typed = new Typed('#typed', {
   strings: [
-      'net worth?', 
-      'budgeting?',
-      'investing?',
-      'estate Planning?'
+    
+    'What is your <strong>net worth?</strong>', 
+    'Are your <strong>assets protected?</strong>'
+    
+      // 'net worth?', 
+      // 'budgeting?',
+      // 'investing?',
+      // 'estate Planning?'
   ],
   typeSpeed: 80,
   backSpeed: 0,

@@ -16,7 +16,7 @@ $technology = get_field('technology_section');
   <div class="container">
   <div class="bnr_content">
     <!-- <h1><?php echo $banner['banner_heading'];?></h1> -->
-    <h1>What's your <strong id="typed" style="white-space: pre"></strong></h1> 
+    <h1 style="white-space: pre" id="typed" > </h1> 
     <h6><?php echo $banner['banner_sub_heading'];?></h6>
     <div class="appIcons mt-4"> <?php echo get_app_icons();?></div>
       <div class="paragraph"> <?php echo $banner['banner_description'];?></div>
@@ -194,6 +194,7 @@ $technology = get_field('technology_section');
 		  }
 		  ?>
             <h3><?php echo $pricing_res['price_prefix']?><?php if($pricing_res['price_suffix']){?><strong>/<?php echo $pricing_res['price_suffix'];?></strong><?php }?></h3>
+            <h4><s>$120 /year</s></h4>
             <h6><?php echo $pricing_res['pricing_content_title']?></h6>
             <?php echo $pricing_res['pricing_content']?> <a href="<?php echo $pricing_res['pricing_button_url']?>" class="btn btn-primary"><?php echo $pricing_res['pricing_button_text']?></a> </div>
         </div>
