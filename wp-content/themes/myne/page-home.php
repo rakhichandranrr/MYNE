@@ -71,21 +71,23 @@ $technology = get_field('technology_section');
       
       <!-- TABS START -->
       <div class="tabsSty">
-        <ul class="nav nav-fill nav-tabs" role="tablist">
-          <?php
-            if($technology['technologies'])
-            {
-              $i = 0;
-              foreach($technology['technologies'] as $technology_res)
+        <div class="scrollDiv">
+          <ul class="nav nav-fill nav-tabs" role="tablist">
+            <?php
+              if($technology['technologies'])
               {
-              ?>
-          <li class="nav-item" role="presentation"> <a class="nav-link <?php if($i==0){?>active<?php }?>" id="fill-tab-<?php echo $i;?>" data-bs-toggle="tab" href="#fill-tabpanel-<?php echo $i;?>" role="tab" aria-controls="fill-tabpanel-<?php echo $i;?>" aria-selected="true"> <span class="imgSpc"><img src="<?php echo $technology_res['icon']['url'];?>" alt="icon"></span> <?php echo $technology_res['title'];?> </a> </li>
-          <?php
-            $i++;
+                $i = 0;
+                foreach($technology['technologies'] as $technology_res)
+                {
+                ?>
+            <li class="nav-item" role="presentation"> <a class="nav-link <?php if($i==0){?>active<?php }?>" id="fill-tab-<?php echo $i;?>" data-bs-toggle="tab" href="#fill-tabpanel-<?php echo $i;?>" role="tab" aria-controls="fill-tabpanel-<?php echo $i;?>" aria-selected="true"> <span class="imgSpc"><img src="<?php echo $technology_res['icon']['url'];?>" alt="icon"></span> <?php echo $technology_res['title'];?> </a> </li>
+            <?php
+              $i++;
+                }
               }
-            }
-            ?>
-        </ul>
+              ?>
+          </ul>
+        </div>
         <div class="tab-content py-5" id="tab-content">
           <?php
             if($technology['technologies'])
