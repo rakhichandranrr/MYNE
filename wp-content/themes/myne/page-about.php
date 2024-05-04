@@ -111,7 +111,7 @@ $footer = get_field('footer', 'option',true);
 ?>
 
 <!-- GET_IN_TOUCH START -->
-<!-- <section class="secSpace getinwraper homeOnly">
+<section class="secSpace getinwraper homeOnly">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -123,7 +123,7 @@ $footer = get_field('footer', 'option',true);
       </div>
     </div>
   </div>
-</section> -->
+</section>
 <!-- GET_IN_TOUCH END --> 
 
 <!-- APP-DOWNLOAD START -->
