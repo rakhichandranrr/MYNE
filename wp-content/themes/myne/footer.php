@@ -45,8 +45,8 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
       <div class="socialFtr">
         <ul>
           <li> <a href="<?php echo $social_media['linkedin_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social1.svg" alt="icon"></a> </li>
-          <li> <a href="<?php echo $social_media['twitter_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social2.svg" alt="icon"></a> </li>
-          <li> <a href="<?php echo $social_media['facebook_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social3.svg" alt="icon"></a> </li>
+          <!-- <li> <a href="<?php echo $social_media['twitter_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social2.svg" alt="icon"></a> </li>
+          <li> <a href="<?php echo $social_media['facebook_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social3.svg" alt="icon"></a> </li> -->
           <li> <a href="<?php echo $social_media['instagram_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social4.svg" alt="icon"></a> </li>
         </ul>
       </div>

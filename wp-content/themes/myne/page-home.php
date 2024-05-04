@@ -104,12 +104,15 @@ $technology = get_field('technology_section');
               </div>
               <div class="col-md-12 col-lg-8">
                 <div class="imgFrames webOnly">
-                  <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_web']['url'];?>" alt="image"> </div>
-                  <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div>
+                  <div class="webImg"> <img class="prdImg" src="<?php echo $technology_res['image_web']['url'];?>" alt="image"> </div>
+                  <!-- <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_web']['url'];?>" alt="image"> </div> -->
+                  <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> 
+                </div>
                 
                 <!-- MOBILE-VIEW START -->
                 <div class="imgFrames mobOnly">
-                  <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_mobile']['url'];?>" alt="image"> </div>
+                  <div class="mobImg"> <img class="prdImg" src="<?php echo $technology_res['image_mobile']['url'];?>" alt="image"> </div>
+                  <!-- <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_mobile']['url'];?>" alt="image"> </div> -->
                 </div>
                 <!-- MOBILE-VIEW END --> 
                 
