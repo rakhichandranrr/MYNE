@@ -159,22 +159,16 @@ $(document).ready(function() {
 
 
 
-
- // Typed.js (Type_writter effcet)
+ // Initialize Typed.js with shuffled text
  var typed = new Typed('#typed', {
   strings: [
+      'What is your <strong>net worth?</strong>', 
+      'Are your <strong>assets protected?</strong>'
     
-    'What is your <strong>net worth?</strong>', 
-    'Are your <strong>assets protected?</strong>'
-    
-      // 'net worth?', 
-      // 'budgeting?',
-      // 'investing?',
-      // 'estate Planning?'
   ],
-  typeSpeed: 80,
+  typeSpeed: 30,
   backSpeed: 0,
-  startDelay: 10,
+  startDelay: 0,
   cursorChar: ' ',
   shuffle: false,
   smartBackspace: false,
