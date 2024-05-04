@@ -73,7 +73,7 @@ $why_choose_myne = get_field('why_choose_myne',20);
 <!-- FOUNDER END --> 
 
 <!-- WHY_CHOOSE START -->
-  <section class="secSpace whyChoose inner homeOnly">
+  <section class="secSpace whyChoose inner">
     <div class="container">
       <div class="titleArea">
         <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading',20);?></h2>
