@@ -73,7 +73,7 @@ $why_choose_myne = get_field('why_choose_myne',20);
 <!-- FOUNDER END --> 
 
 <!-- WHY_CHOOSE START -->
-  <section class="secSpace whyChoose inner">
+  <!-- <section class="secSpace whyChoose inner">
     <div class="container">
       <div class="titleArea">
         <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading',20);?></h2>
@@ -102,6 +102,76 @@ $why_choose_myne = get_field('why_choose_myne',20);
       ?>
         </div>
       </div>
+    </div>
+  </section> -->
+<!-- DYNAMIC SECTION-END -->
+
+  <section class="secSpace whyChoose inner">
+    <div class="container">
+      <div class="titleArea">
+        <h2 class="mainTitle mb-3">Security at <strong>Myne</strong></h2>
+      </div>
+
+      <div class="boxWraper">
+                <div class="row gridPad">
+                    <div class="col-md-6 col-lg-3 gridPad">
+                        <div class="chooseBx">
+                            <div class="imgArea">
+                                <img src="https://myne.stocker.team//wp-content/themes/myne/assets/images/icons/sec-1.svg" alt="icon">
+                            </div>
+                            <div class="contArea">
+                                <h4>Security</h4>
+                                <div class="paragraph">
+                                  Your personal information, account and data is protected with layers of data security. We've built Myne to make sure everything remains yours.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 gridPad">
+                        <div class="chooseBx">
+                            <div class="imgArea">
+                              <img src="https://myne.stocker.team//wp-content/themes/myne/assets/images/icons/sec-2.svg" alt="icon">
+                            </div>
+                            <div class="contArea">
+                                <h4>Encryption</h4>
+                                <div class="paragraph">
+                                  Myne has ensured data encryption through layers and multiple channels using global TLS standards.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 gridPad">
+                        <div class="chooseBx">
+                            <div class="imgArea">
+                              <img src="https://myne.stocker.team//wp-content/themes/myne/assets/images/icons/sec-3.svg" alt="icon">
+                            </div>
+                            <div class="contArea">
+                                <h4>Privacy</h4>
+                                <div class="paragraph">
+                                  Everything is anonymized. Your account, and its data, is never linked to your personal information or profile.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 gridPad">
+                        <div class="chooseBx">
+                            <div class="imgArea">
+                              <img src="https://myne.stocker.team//wp-content/themes/myne/assets/images/icons/sec-4.svg" alt="icon">
+                            </div>
+                            <div class="contArea">
+                                <h4>Safety</h4>
+                                <div class="paragraph">
+                                  We cannot view or access any of your bank account details or credentials. Your data is only passed through highly regulated third party providers.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      </div>
+      
     </div>
   </section>
 <!-- WHY_CHOOSE END --> 
