@@ -162,9 +162,10 @@ $(document).ready(function() {
  // Initialize Typed.js with shuffled text
  var typed = new Typed('#types', {
   strings: [
-    'Are your <strong>assets protected?</strong>',
-    'What is your <strong>net worth?</strong>',
-     
+    // 'Are your <strong>assets protected?</strong>',
+    // 'What is your <strong>net worth?</strong>',
+      'Are your assets protected?',
+    'What is your net worth?'
     
   ],
   typeSpeed: 80,
