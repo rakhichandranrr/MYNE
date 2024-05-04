@@ -163,7 +163,7 @@ $(document).ready(function() {
  var typed = new Typed('#typed', {
   strings: [
     'Are your <strong>assets protected?</strong>',
-      'What is your <strong>net worth?</strong>'
+    'What is your <strong>net worth?</strong>',
      
     
   ],
