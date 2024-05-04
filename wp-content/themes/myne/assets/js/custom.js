@@ -160,14 +160,14 @@ $(document).ready(function() {
 
 
  // Initialize Typed.js with shuffled text
- var typed = new Typed('#typed', {
+ var typed = new Typed('#types', {
   strings: [
     'Are your <strong>assets protected?</strong>',
     'What is your <strong>net worth?</strong>',
      
     
   ],
-  typeSpeed: 30,
+  typeSpeed: 80,
   backSpeed: 0,
   startDelay: 0,
   cursorChar: ' ',
