@@ -961,6 +961,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding: 0 0 32px;
     border-left: 4px solid rgba(46, 225, 213, 0.20);
 }
+.featuredTabs .vertTab .tabLine:last-child{ padding-bottom: 0; }
+
 .featuredTabs .tabsSty .aligCont { align-items: inherit; }
 
 .wpcf7-response-output {
