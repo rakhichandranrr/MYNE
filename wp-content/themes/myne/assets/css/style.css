@@ -1421,7 +1421,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .tabsSty  .scrollDiv .nav.nav-tabs{  width: 500px;}
     .tabsSty .scrollDiv .nav-tabs .nav-item:first-child, .tabsSty .scrollDiv .nav-tabs .nav-item:last-child{ border-radius: 0; }
     /* video.video-banner { max-height: 215px; } */
-
+    .appDownload .appIcons .btnSpace img {   height: 42px !important;  }
 }
 @media all and (max-width: 380px) {
     .getstartWraper.signupWrap h2{ padding-right: 0%; }
