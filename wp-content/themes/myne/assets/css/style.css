@@ -1433,6 +1433,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .getstartWraper h2 { font-size: 28px; }
     .mainTitle {  font-size: 32px;  line-height: 34px; }
     .priceBox h3 { font-size: 46px; }
+    .txtHeight { min-height: 85px; }
    
 }
 @media all and (max-width: 320px) {
