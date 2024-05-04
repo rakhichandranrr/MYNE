@@ -957,6 +957,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .featuredTabs .vertTab .nav-link.active{
     border-left: 4px solid var(--primary);
 }
+.featuredTabs .tabsSty .nav-tabs .nav-item {  max-width: 180px; }
+
 .featuredTabs .vertTab .nav-link.active h3{
     color: var(--primary);
 }
