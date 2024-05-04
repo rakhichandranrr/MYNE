@@ -83,9 +83,9 @@ get_header();
                 <div class="tab-pane fade show <?php if($j==0){?>active<?php }?>" id="sub_content_<?php echo $j.$i;?>" role="tabpanel" aria-labelledby="sub_content_tab_<?php echo $j.$i;?>">
                   <div class="imgFrames webOnly">
                   
-                    <div class="webImg"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
-                    <!-- <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
-                    <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div> -->
+                    <!-- <div class="webImg"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div> -->
+                    <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
+                    <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div>
                   
                   <!-- MOBILE-VIEW START -->
                   <!-- <div class="imgFrames mobOnly">
