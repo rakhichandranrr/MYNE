@@ -877,6 +877,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .norm_conts .paragraph p{ line-height: 20px; }
 
+.norm_conts a{ color: var(--white); }
+
 .norm_conts h6 {
     font-size: 16px;
     font-style: normal;
