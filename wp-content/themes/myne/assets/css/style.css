@@ -1423,8 +1423,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
     /* video.video-banner { max-height: 215px; } */
     .appDownload .appIcons .btnSpace img {   height: 42px !important;  }
 }
-@media all and (max-width: 380px) {
+@media all and (max-width: 400px) {
     .getstartWraper.signupWrap h2{ padding-right: 0%; }
+    .appDownload .appIcons .btnSpace {   margin-bottom: 10px; }
 }
 
 @media all and (max-width: 360px) {
