@@ -168,9 +168,9 @@ $(document).ready(function() {
       'investing?',
       'estate Planning?'
   ],
-  typeSpeed: 60,
+  typeSpeed: 70,
   backSpeed: 0,
-  startDelay: 0,
+  startDelay: 10,
   cursorChar: '_',
   shuffle: false,
   smartBackspace: false,
