@@ -1001,7 +1001,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .typed-cursor{
     color: var(--primary);
 }
-
+.webImg, .mobImg{
+    position: relative;
+    z-index: 1;
+}
 
 
 /* MEDIA-QUERY START */
