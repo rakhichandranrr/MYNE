@@ -1409,6 +1409,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .f_about .appIcons .btnSpace{ margin-left: 0; margin-right: 8px; }  
 
     .webImg {  padding: 30px 0; }
+    .appDownload .appIcons.my-2{ margin-bottom: 0 !important; }
 
 }
 @media all and (max-width: 580px) {
