@@ -474,7 +474,7 @@ footer .f_logo img {
 }
 .f_about .appIcons .btnSpace{ text-align: center; }
 
-.footer_wrapper .appIcons .btnSpace img {  height: 40px; }
+.footer_wrapper .appIcons .btnSpace img {  height: 40px !important; }
 
 .f_about .appIcons .btnSpace span{ font-size: 9px; }
 
