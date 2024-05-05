@@ -1231,7 +1231,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
         line-height: 20px;
         display: block;
         width: 100%;
-        padding: 10px 5px !important;
+        padding: 10px 0px !important;
     }
     header .btn-Link.mobOnly {
         padding-bottom: 0px !important;
@@ -1247,20 +1247,21 @@ footer .f_links ul li a:hover { color: var(--primary); }
     }
     header .btn-close {
         color: var(--white) !important;
-        font-size: 20px !important;
+        font-size: 27px !important;
         opacity: 1 !important;
+        height: auto;
     }
     header, .sticky {
         padding: 10px 0;
     }
     .sticky .headerwraper {
-        padding: 16px;
+        padding: 6px 16px;
     }
     header .headerwraper {
         padding: 15px 0px;
     }
     .container.headCont {
-        padding: 0 10px;
+        padding: 6px 0px;
     }
   
     .getstartWraper.signupWrap h2{
@@ -1380,7 +1381,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .appDownload .text-end { text-align: center !important; } 
 
-    .appDownload .getstartWraper {  padding-top: 24px;  padding-bottom: 24px; }
+    .appDownload .getstartWraper {  padding: 16px 24px; }
 
     .norm_conts .paragraph, .norm_conts .paragraph p, .norm_conts ul { margin: 0 0 15px; font-size: 14px;  line-height: 18px; }
 
@@ -1402,6 +1403,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .txtHeight { min-height: 100px; }
 
+    header .logo-img { max-height: 28px; }
+
+    .f_about .appIcons .btnSpace{ margin-left: 0; margin-right: 8px; }  
+
 }
 @media all and (max-width: 580px) {
     .tabsSty .nav-tabs .nav-link{ font-size: 12px; }
@@ -1422,6 +1427,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .tabsSty .scrollDiv .nav-tabs .nav-item:first-child, .tabsSty .scrollDiv .nav-tabs .nav-item:last-child{ border-radius: 0; }
     /* video.video-banner { max-height: 215px; } */
     .appDownload .appIcons .btnSpace img {   height: 42px !important;  }
+    .appDownload .appIcons {  display: flex; justify-content: space-between;  }
 }
 @media all and (max-width: 400px) {
     .getstartWraper.signupWrap h2{ padding-right: 0%; }
