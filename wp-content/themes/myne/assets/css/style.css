@@ -1406,6 +1406,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     header .logo-img { max-height: 28px; }
 
     .f_about .appIcons .btnSpace{ margin-left: 0; margin-right: 8px; }  
+    
+    .webImg {  padding: 30px 0; }
 
 }
 @media all and (max-width: 580px) {
@@ -1416,19 +1418,29 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 @media all and (max-width: 480px) {
     .bannerWraper .getstartWraper h2 strong {  display: block; }
+
     .getstartWraper.signupWrap h2{ padding-right: 2%; }
+
     .appDownload .getstartWraper.signupWrap h2{ padding: 0; }
+
     .scrollDiv {
         max-width: 600px;
         overflow-x: scroll;
         margin: 0 -16px;
     }
     .tabsSty  .scrollDiv .nav.nav-tabs{  width: 500px;}
+    
     .tabsSty .scrollDiv .nav-tabs .nav-item:first-child, .tabsSty .scrollDiv .nav-tabs .nav-item:last-child{ border-radius: 0; }
     /* video.video-banner { max-height: 215px; } */
+   
     .appDownload .appIcons .btnSpace img {   height: 42px !important;  }
+
     .appDownload .appIcons {  display: flex; justify-content: flex-start;  }
+
     .appDownload .appIcons .btnSpace{ margin-left: 0; margin-right: 8px; }
+
+
+ 
 }
 @media all and (max-width: 400px) {
     .getstartWraper.signupWrap h2{ padding-right: 0%; }
