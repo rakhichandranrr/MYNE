@@ -1427,7 +1427,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .tabsSty .scrollDiv .nav-tabs .nav-item:first-child, .tabsSty .scrollDiv .nav-tabs .nav-item:last-child{ border-radius: 0; }
     /* video.video-banner { max-height: 215px; } */
     .appDownload .appIcons .btnSpace img {   height: 42px !important;  }
-    .appDownload .appIcons {  display: flex; justify-content: space-between;  }
+    .appDownload .appIcons {  display: flex; justify-content: flex-start;  }
+    .appDownload .appIcons .btnSpace{ margin-left: 0; margin-right: 8px; }
 }
 @media all and (max-width: 400px) {
     .getstartWraper.signupWrap h2{ padding-right: 0%; }
