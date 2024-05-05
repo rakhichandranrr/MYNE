@@ -1112,7 +1112,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .mobile-offcanvas.show{
         visibility: visible;
         transform: translateX(0);
-        padding: 24px ;
+        padding: 10px 24px 24px;
     }
     .mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
         display: block;
