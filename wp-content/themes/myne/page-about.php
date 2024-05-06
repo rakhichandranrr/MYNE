@@ -72,17 +72,21 @@ get_header();
 
 <!-- DYNAMIC SECTION-END -->
 
+<?php
+$security_content = get_field('security');
+?>
+
 <section class="secSpace whyChoose inner">
   <div class="container">
     <div class="titleArea">
-      <h2 class="mainTitle mb-3"><?php echo get_field('security_heading');?></h2>
+      <h2 class="mainTitle mb-3"><?php echo $security_content['security_heading'];?></h2>
     </div>
     <div class="boxWraper">
       <div class="row gridPad">
         <?php
-		if(get_field('security_content'))
+		if($security_content['security_content'])
 		{
-			foreach(get_field('security_content') as $security_content_res)
+			foreach($security_content['security_content'] as $security_content_res)
 			{
 		?>
         <div class="col-md-6 col-lg-3 gridPad">
