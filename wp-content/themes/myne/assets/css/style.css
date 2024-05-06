@@ -1372,7 +1372,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .imgFrames.mobOnly { display: block; }
 
-    .mobImg.mobOnly { display: block; margin-top: 10px; }
+    .mobImg.mobOnly { display: block; margin-top: 0px; }
+
+    .tabsSty .tab-content.ftrOnly{ margin-top: 15px; }
 
     .mobImg.mobOnly img.prdImg {
         height: 270px;
@@ -1437,7 +1439,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .featuredTabs .imgFrames.mobOnly {  margin: 30px 0; }
 
-    .vertTab {  margin: 10px 0; }
+    .vertTab {  margin: 15px 0 10px; }
 
     .featuredTabs .vertTab h3 { font-size: 20px; }
 
