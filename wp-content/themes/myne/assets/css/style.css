@@ -1024,7 +1024,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 	min-height:240px;
 }
 .priceArea .priceBox h3 span {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32px;
 }
@@ -1343,7 +1343,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .priceWraper .titleArea .mainTitle, .titlSpace {   margin-bottom: 32px; }
 
-    .imgFrames.webOnly{ display: none; }
+    .imgFrames.webOnly, .webImg.webOnly{ display: none; }
 
     .imgFrames.mobOnly { display: block; margin-top: 10px; }
 
