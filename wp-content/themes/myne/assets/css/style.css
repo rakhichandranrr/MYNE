@@ -1313,7 +1313,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
         flex-direction: column-reverse;
         justify-content: left;
     }
+
     .socialFtr ul li:first-child{ padding-left: 0; }
+
     .footerBtm .copyrights {
         font-size: 12px;
         line-height: 16px;
@@ -1341,6 +1343,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .whyChoose .chooseBx{ min-height: 240px; }
 
     .priceBox h3 { font-size: 56px; }
+
     .priceBox h6 {
         font-size: 20px;
         line-height: 24px;
@@ -1359,7 +1362,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .imgFrames.webOnly, .webImg.webOnly{ display: none; }
 
-    .imgFrames.mobOnly, .mobImg.mobOnly { display: block; margin-top: 10px; }
+    .imgFrames.mobOnly { display: block; }
+
+    .mobImg.mobOnly { display: block; margin-top: 10px; }
 
     .mobImg.mobOnly img.prdImg {
         height: 270px;
@@ -1368,9 +1373,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .tabsSty .btn-primary{ width: 100%; }
 
-    .prdctList .paragraph { font-size: 18px; line-height: 24px; }
-
-    .tabsSty .nav-tabs span.imgSpc img { max-height: 32px; }
+    .prdctList .paragraph { font-size: 18px; line-height: 24px; margin-bottom: 0; }
 
     .techWrap .titleArea { margin-bottom: 40px; }
  
@@ -1438,12 +1441,18 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .appDownload .appIcons.my-2{ margin-bottom: 0 !important; }
 
-   .prdctList.tab-pane .contSpc{ padding-left: calc(var(--bs-gutter-x) * .5); padding-right: calc(var(--bs-gutter-x) * .5); }
+    .prdctList.tab-pane .contSpc{ padding-left: calc(var(--bs-gutter-x) * .5); padding-right: calc(var(--bs-gutter-x) * .5); }
 
 }
 @media all and (max-width: 580px) {
-    .tabsSty .nav-tabs .nav-link{ font-size: 12px; }
-    
+
+    .tabsSty .nav-tabs .nav-link{ font-size: 12px; min-height: 68px; padding: 8px 0px 8px; }
+
+    .tabsSty .nav-tabs span.imgSpc img { max-height: 22px; }
+
+    .tabsSty .nav.nav-tabs {  min-height: 68px; }
+
+    .tabsSty .nav-tabs span.imgSpc {  height: 30px; }
    
 
 }
