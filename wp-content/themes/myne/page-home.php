@@ -252,7 +252,7 @@ get_footer();
  // Initialize Typed.js with shuffled text
  var typed = new Typed('#types', {
   strings: [
-    '<?php echo $banner['banner_heading1'];?>', 
+    '\''<?php echo $banner['banner_heading1'];?>'\'', 
     '<?php echo $banner['banner_heading_2'];?>'
   
   ],
