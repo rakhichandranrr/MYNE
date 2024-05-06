@@ -1175,7 +1175,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     }
    
     .getstartWraper h2 {
-        font-size: 24px;
+        /* font-size: 24px; */
         line-height: normal;
     }
     .getstartWraper h6 {
@@ -1355,6 +1355,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .priceBox .btn-primary {
         font-size: 16px;
         min-height: 48px;
+        margin-bottom: 10px;
     }
     .priceBox {  padding: 58px 20px 20px 20px;  margin-bottom: 20px; }
 
@@ -1452,7 +1453,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .prdctList.tab-pane .contSpc{ padding-left: calc(var(--bs-gutter-x) * .5); padding-right: calc(var(--bs-gutter-x) * .5); }
 
     .priceBox ul li::before {  width: 26px; height: 27px; }
-    
+
     .priceBox ul li{ padding-left: 38px; }
 
 }
