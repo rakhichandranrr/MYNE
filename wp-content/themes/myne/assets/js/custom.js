@@ -123,19 +123,23 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 // SCROLL-LEFT-RIGHT END
+
 // SCROLL-TO PRICE 
-$(document).ready(function(){
-  // Check if there's a hash in the URL
-  var hash = window.location.hash;
-  if(hash) {
-    // Smooth scroll to the section corresponding to the hash
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800);
-  }
-});
+// $(document).ready(function(){
+//   // Check if there's a hash in the URL
+//   var hash = window.location.hash;
+//   if(hash) {
+//     // Smooth scroll to the section corresponding to the hash
+//     $('html, body').animate({
+//       scrollTop: $(hash).offset().top
+//     }, 800);
+//   }
+// });
 // SCROLL-TO PRICE END
 
+
+
+// SCROLL-ACTIVE
 $(document).ready(function() {
   var $menuLink = $('ul.navbar-nav li a#pricemenu');
   var $section = $('#price');
@@ -150,4 +154,24 @@ $(document).ready(function() {
       $menuLink.removeClass('active');
     }
   });
+});
+// SCROLL-ACTIVE END
+
+
+
+ // Initialize Typed.js with shuffled text
+ var typed = new Typed('#types', {
+  strings: [
+    'What is your <strong>net worth?</strong>', 
+    'Are your <strong>assets protected?</strong>'
+  
+  ],
+  typeSpeed: 80,
+  backSpeed: 0,
+  startDelay: 0,
+  cursorChar: ' ',
+  shuffle: false,
+  smartBackspace: false,
+  loop: true,
+  loopCount: Infinity
 });

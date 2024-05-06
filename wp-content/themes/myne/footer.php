@@ -33,20 +33,20 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
       </div>
       <div class="f_links col-md-4 col-lg-3">
         <ul>
-          <li> <a href="<?php echo site_url();?>/about-us/">About us</a> </li>
+          <li> <a href="<?php echo site_url();?>/about-us/">Security</a> </li>
           <li> <a href="<?php echo site_url();?>/features/">Features</a> </li>
-          <li> <a href="<?php echo site_url();?>/terms-conditions/">Terms & conditions</a> </li>
+          <li> <a href="<?php echo site_url();?>/terms-conditions/">Terms & Conditions</a> </li>
           <li> <a href="<?php echo site_url();?>/privacy-policy/">Privacy policy</a> </li>
         </ul>
       </div>
     </div>
-    <div class="footerBtm pt-3 mt-3">
+    <div class="footerBtm pt-3 mt-4">
       <div class="copyrights"> Copyright <i class="bi bi-c-circle"></i> <?php echo date('Y');?> myne. All rights reserved. </div>
       <div class="socialFtr">
         <ul>
           <li> <a href="<?php echo $social_media['linkedin_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social1.svg" alt="icon"></a> </li>
-          <li> <a href="<?php echo $social_media['twitter_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social2.svg" alt="icon"></a> </li>
-          <li> <a href="<?php echo $social_media['facebook_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social3.svg" alt="icon"></a> </li>
+          <!-- <li> <a href="<?php echo $social_media['twitter_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social2.svg" alt="icon"></a> </li>
+          <li> <a href="<?php echo $social_media['facebook_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social3.svg" alt="icon"></a> </li> -->
           <li> <a href="<?php echo $social_media['instagram_url'];?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/social4.svg" alt="icon"></a> </li>
         </ul>
       </div>
@@ -59,12 +59,13 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
 </body></html>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
+	/*
 function onload() {
       $("#contact ").click(function() {
     grecaptcha.execute();
 });
     }
-	
+	*/
 
 $("#contact ").click(function() {
     grecaptcha.execute();

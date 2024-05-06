@@ -16,7 +16,7 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
     <div class="headerwraper">
       <div class="mobileHeader"> 
         <!-- LOGO-MOBILE START -->
-        <div class="navbar-brand logoMobile"><img class="logo-img" src="<?php echo $image[0]; ?>" alt="MYNE"></div>
+        <div class="navbar-brand logoMobile"><a href="<?php echo esc_url(home_url('/')); ?>"><img class="logo-img" src="<?php echo $image[0]; ?>" alt="MYNE"></a></div>
         <!-- LOGO-MOBILE END -->
         
         <button data-trigger="navbar_main" class="d-lg-none btn btn-nav_toggle" type="button"> <i class="bi bi-list"></i></button>
