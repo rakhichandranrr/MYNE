@@ -139,7 +139,7 @@ header ul.navbar-nav li.nav-item.dropdown.btn-Link {
     margin-left: 20px;
     padding-left: 0 !important;
 }
-header .nav-item.dropdown .btn-Link .nav-link::after{ display: none; }
+header .nav-link.btn.dropdown-toggle::after{ display: none; }
 
 header .nav-link.btn.btn-login, header .nav-link.btn.btn-login:hover{
     background-color: var(--white);
