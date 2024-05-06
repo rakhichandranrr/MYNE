@@ -1,9 +1,6 @@
 <?php 
 /*Template Name: About*/
 get_header();
-
-$why_choose_myne = get_field('why_choose_myne',20);
-
 ?>
 <!-- BANNER-START -->
 
@@ -28,7 +25,7 @@ $why_choose_myne = get_field('why_choose_myne',20);
 
 <!-- BANNER-END --> 
 
-<!-- FOUNDER START -->
+<!-- FOUNDER START --> 
 <!-- <section class="secSpace teamWraper">
   <div class="container">
     <div class="titleArea titlSpace">
@@ -69,112 +66,47 @@ $why_choose_myne = get_field('why_choose_myne',20);
       </div>
     </div>
   </div>
-</section> -->
+</section> --> 
 <!-- FOUNDER END --> 
 
-<!-- WHY_CHOOSE START -->
-  <!-- <section class="secSpace whyChoose inner">
-    <div class="container">
-      <div class="titleArea">
-        <h2 class="mainTitle mb-3"><?php echo get_field('why_choose_myne_heading',20);?></h2>
-        <div class="paragraph"> <?php echo get_field('why_choose_myne_short_description',20);?></div>
-      </div>
-      <div class="boxWraper">
-        <div class="row gridPad">
-          <?php
-      if($why_choose_myne)
-      {
-        foreach($why_choose_myne as $why_choose_myne_res)
-        {
-      ?>
-          <div class="col-md-6 col-lg-3 gridPad">
-            <div class="chooseBx">
-              <div class="imgArea"> <img src="<?php echo $why_choose_myne_res['why_choose_icon']['url'];?>" alt="icon"> </div>
-              <div class="contArea">
-                <h4><?php echo $why_choose_myne_res['why_choose_heading'];?></h4>
-                <div class="paragraph"> <?php echo $why_choose_myne_res['why_choose_content'];?> </div>
-              </div>
-            </div>
-          </div>
-          <?php
-        }
-      }
-      ?>
-        </div>
-      </div>
-    </div>
-  </section> -->
+
 <!-- DYNAMIC SECTION-END -->
 
-  <section class="secSpace whyChoose inner">
-    <div class="container">
-      <div class="titleArea">
-        <h2 class="mainTitle mb-3">Security at <strong>Myne</strong></h2>
-      </div>
+<?php
+$security_content = get_field('security');
+?>
 
-      <div class="boxWraper">
-                <div class="row gridPad">
-                    <div class="col-md-6 col-lg-3 gridPad">
-                        <div class="chooseBx">
-                            <div class="imgArea">
-                                <img src="https://myne.stocker.team//wp-content/themes/myne/assets/images/icons/sec-1.svg" alt="icon">
-                            </div>
-                            <div class="contArea">
-                                <h4>Security</h4>
-                                <div class="paragraph">
-                                  Your personal information, account and data is protected with layers of data security. We've built Myne to make sure everything remains yours.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 gridPad">
-                        <div class="chooseBx">
-                            <div class="imgArea">
-                              <img src="https://myne.stocker.team//wp-content/themes/myne/assets/images/icons/sec-2.svg" alt="icon">
-                            </div>
-                            <div class="contArea">
-                                <h4>Encryption</h4>
-                                <div class="paragraph">
-                                  Myne has ensured data encryption through layers and multiple channels using global TLS standards.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 gridPad">
-                        <div class="chooseBx">
-                            <div class="imgArea">
-                              <img src="https://myne.stocker.team//wp-content/themes/myne/assets/images/icons/sec-3.svg" alt="icon">
-                            </div>
-                            <div class="contArea">
-                                <h4>Privacy</h4>
-                                <div class="paragraph">
-                                  Everything is anonymized. Your account, and its data, is never linked to your personal information or profile.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 gridPad">
-                        <div class="chooseBx">
-                            <div class="imgArea">
-                              <img src="https://myne.stocker.team//wp-content/themes/myne/assets/images/icons/sec-4.svg" alt="icon">
-                            </div>
-                            <div class="contArea">
-                                <h4>Safety</h4>
-                                <div class="paragraph">
-                                  We cannot view or access any of your bank account details or credentials. Your data is only passed through highly regulated third party providers.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-      </div>
-      
+<section class="secSpace whyChoose inner">
+  <div class="container">
+    <div class="titleArea">
+      <h2 class="mainTitle mb-3"><?php echo $security_content['security_heading'];?></h2>
     </div>
-  </section>
-<!-- WHY_CHOOSE END --> 
+    <div class="boxWraper">
+      <div class="row gridPad">
+        <?php
+		if($security_content['security_content'])
+		{
+			foreach($security_content['security_content'] as $security_content_res)
+			{
+		?>
+        <div class="col-md-6 col-lg-3 gridPad">
+          <div class="chooseBx">
+            <div class="imgArea"> <img src="<?php echo $security_content_res['security_icon']['url'];?>" alt="icon"> </div>
+            <div class="contArea">
+              <h4><?php echo $security_content_res['security_title'];?></h4>
+              <div class="paragraph"> <?php echo $security_content_res['security_content'];?> </div>
+            </div>
+          </div>
+        </div>
+        <?php
+			}
+		}
+		?>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- WHY_CHOOSE END -->
 
 <?php
 $footer = get_field('footer', 'option',true);
@@ -188,9 +120,7 @@ $footer = get_field('footer', 'option',true);
         <h2 class="mainTitle mb-3"><?php echo $footer['get_in_touch_heading'];?></h2>
         <div class="paragraph"> <?php echo $footer['get_in_touch_description'];?> </div>
       </div>
-      <div class="col-md-6 formSpc">
-        <?php echo $footer['get_in_touch_form_shortcode'];?>
-      </div>
+      <div class="col-md-6 formSpc"> <?php echo $footer['get_in_touch_form_shortcode'];?> </div>
     </div>
   </div>
 </section>
@@ -205,9 +135,7 @@ $footer = get_field('footer', 'option',true);
           <h2 class="m-0"><?php echo $footer['download_app_content'];?></h2>
         </div>
         <div class="col-md-5 col-lg-6 text-end">
-          <div class="appIcons my-2">
-            <?php echo get_app_icons();?>
-          </div>
+          <div class="appIcons my-2"> <?php echo get_app_icons();?> </div>
         </div>
       </div>
     </div>
