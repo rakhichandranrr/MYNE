@@ -108,7 +108,7 @@ $technology = get_field('technology_section');
                 <div class="imgFrames webOnly">
                   <div class="webImg"> <img class="prdImg" src="<?php echo $technology_res['image_web']['url'];?>" alt="image"> </div>
                   <!-- <div class="tabFrame"> <img class="prdImg" src="<?php echo $technology_res['image_web']['url'];?>" alt="image"> </div> -->
-                  <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> 
+                  <!-- <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img">  -->
                 </div>
                 
                 <!-- MOBILE-VIEW START -->
