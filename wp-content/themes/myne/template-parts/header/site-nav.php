@@ -32,8 +32,8 @@ if (strpos($url,'price') !== false) {
         <li class="nav-item"> <a class="nav-link" href="<?php echo $header['login_wealth_planner_url'];?>">Wealth Planner</a> </li>
       </ul>
     </li>
-    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn btn-login" href="<?php echo $header['log_in_as_customer_mobile_url'];?>">Log in as Customer</a> </li>
-    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn btn-login" href="<?php echo $header['log_in_as_wealth_planner_mobile_url'];?>">Log in as Wealth Planner</a> </li>
+    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn btn-login" href="<?php echo $header['login_customer_url'];?>">Log in as Customer</a> </li>
+    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn btn-login" href="<?php echo $header['login_wealth_planner_url'];?>">Log in as Wealth Planner</a> </li>
     <!-- login-End -->
 
     <!-- Signup-Start -->
