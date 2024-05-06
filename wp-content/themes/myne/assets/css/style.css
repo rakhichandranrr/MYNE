@@ -1113,7 +1113,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .prdctList.tab-pane .contSpc{ padding-left: 15%; padding-right: 15%; }
 
-    .featuredTabs .padSpc{  padding-right: calc(var(--bs-gutter-x) * .5); }
+    .featuredTabs .padSpc{  padding: 0; }
 
 
 }
@@ -1439,7 +1439,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .featuredTabs .imgFrames.mobOnly {  margin: 30px 0; }
 
-    .vertTab {  margin: 15px 0 10px; }
+    .vertTab {  margin: 15px 0; }
 
     .featuredTabs .vertTab h3 { font-size: 20px; }
 
