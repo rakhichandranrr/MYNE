@@ -1099,7 +1099,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
         height: 456px;
     }
     .tabsSty .tab-content {  margin-top: 10px; }
+
     .imgAlign .webImg{ text-align: center; }
+
+    .prdctList.tab-pane .contSpc{ padding-left: 15%; padding-right: 15%; }
 
 }
 @media all and (max-width: 767px) {
@@ -1432,7 +1435,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .appDownload .appIcons.my-2{ margin-bottom: 0 !important; }
 
-    .prdctList.tab-pane .contSpc{ padding-left: calc(var(--bs-gutter-x) * .5); padding-right: calc(var(--bs-gutter-x) * .5); }
+   .prdctList.tab-pane .contSpc{ padding-left: calc(var(--bs-gutter-x) * .5); padding-right: calc(var(--bs-gutter-x) * .5); }
 
 }
 @media all and (max-width: 580px) {
