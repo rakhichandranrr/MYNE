@@ -710,7 +710,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     display: flex;
     align-items: center;
 }
-.imgFrames.webOnly .webImg .prdImg { width: 60%; }
+/* .imgFrames.webOnly .webImg .prdImg { width: 60%; } */
+
 .imgFrames.mobOnly .tabFrame{
     background-image: url(../images/others/mobile-frame.png);
     width: 279px;
@@ -1018,6 +1019,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     position: relative;
     z-index: 1;
 }
+.webImg img{ height: 400px; object-fit: cover; }
+
 .txtHeight { min-height: 80px; }
 
 .priceArea .priceBox ul {
@@ -1346,6 +1349,11 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .imgFrames.webOnly, .webImg.webOnly{ display: none; }
 
     .imgFrames.mobOnly, .mobImg.mobOnly { display: block; margin-top: 10px; }
+
+    .mobImg.mobOnly img.prdImg {
+        height: 270px;
+        object-fit: cover;
+    }
 
     .tabsSty .btn-primary{ width: 100%; }
 
