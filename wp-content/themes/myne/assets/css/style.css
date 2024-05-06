@@ -1043,7 +1043,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .featuredTabs .padSpc{  padding-right: 0; }
 
-.bnr_content.securitySpace{ }
+.bnr_content.securitySpace{ padding-bottom: 60px; }
 
 
 
