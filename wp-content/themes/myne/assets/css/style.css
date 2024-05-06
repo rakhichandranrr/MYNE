@@ -798,6 +798,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 .tabsSty .nav-tabs span.imgSpc img { max-height: 26px; }
 
+.imgAlign .webImg{ text-align: left; }
 
 .prdctList .paragraph{
     font-size: 16px;
@@ -805,7 +806,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     margin-bottom: 10px;
     line-height: 20px; 
 }
-.tabsSty .tab-content{ margin-top: 40px; }
+.tabsSty .tab-content{ margin-top: 15px; }
 
 .tabsSty .tab-content.ftrOnly{ margin-top: 48px; }
 
@@ -1098,6 +1099,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
         height: 456px;
     }
     .tabsSty .tab-content {  margin-top: 10px; }
+    .imgAlign .webImg{ text-align: center; }
 
 }
 @media all and (max-width: 767px) {
