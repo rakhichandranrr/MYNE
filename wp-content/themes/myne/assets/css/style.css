@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .topBg{
-    background: linear-gradient(58deg, #000 19.15%, #2EE1D5 198.11%);
+    background: linear-gradient(58deg, #000 26.15%, #2EE1D5 198.11%);
 }
 header .logo-img {
     max-height: 30px;
@@ -1042,6 +1042,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .priceArea .col-md-6:first-child h4{ display: none; }
 
 .featuredTabs .padSpc{  padding-right: 0; }
+
+.bnr_content.securitySpace{ }
 
 
 

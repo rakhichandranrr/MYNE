@@ -4,9 +4,9 @@ get_header();
 ?>
 <!-- BANNER-START -->
 
-<section class="bannerWraper secSpace bgRemove">
+<section class="bannerWraper secSpace bgRemove securitySpace">
   <div class="container">
-    <div class="bnr_content innerBnr">
+    <div class="bnr_content innerBnr securitySpace">
       <h1><?php echo get_field('banner_heading');?></h1>
       <div class="paragraph"><?php echo get_field('banner_content');?></div>
     </div>
