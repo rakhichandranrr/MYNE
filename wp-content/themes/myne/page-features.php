@@ -10,8 +10,8 @@ get_header();
       <h1><?php echo get_field('banner_heading');?></h1>
       <div class="paragraph"> <?php echo get_field('banner_content');?> </div>
     </div>
-    <div class="featured_img">
-      <div class="img_space"> 
+    <div class="featured_img innerBnr">
+      <div class="img_space text-center"> 
       <?php
 	  $banner_img = get_field('banner_image');
 	  ?>
@@ -25,7 +25,7 @@ get_header();
 <section class="secSpace techWrap featuredTabs pt-0">
   <div class="container">
     <div class="titleArea text-center titleAdjust">
-      <h2 class="mainTitle mb-4"><?php echo get_field('features_heading');?></h2>
+      <h2 class="mainTitle"><?php echo get_field('features_heading');?></h2>
     </div>
     
     <!-- TABS START -->
@@ -56,7 +56,7 @@ get_header();
           
         </ul>
       </div>
-      <div class="tab-content" id="tab-content">
+      <div class="tab-content ftrOnly" id="tab-content">
       
       <?php
 		if(get_field('features'))
@@ -81,16 +81,17 @@ get_header();
                 
                 
                 <div class="tab-pane fade show <?php if($j==0){?>active<?php }?>" id="sub_content_<?php echo $j.$i;?>" role="tabpanel" aria-labelledby="sub_content_tab_<?php echo $j.$i;?>">
-                  <div class="imgFrames webOnly">
-                    <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
-                    <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div>
+                  <div class="imgFrames">
+                   
+                    <div class="webImg"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
+                    <!-- <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div> -->
                   
-                  <!-- MOBILE-VIEW START -->
-                  <div class="imgFrames mobOnly">
-                    <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_mobile']['url'];?>" alt="image"> </div>
-                  </div>
-                  <!-- MOBILE-VIEW END --> 
-                  
+                    <!-- MOBILE-VIEW START -->
+                    <!-- <div class="imgFrames mobOnly">
+                      <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_mobile']['url'];?>" alt="image"> </div>
+                    </div> -->
+                    <!-- MOBILE-VIEW END --> 
+                    </div>
                 </div>
                 
                 <?php

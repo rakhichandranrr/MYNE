@@ -101,7 +101,7 @@ header {
 }
 header .nav-link {
     color: var(--white);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     padding: 0 !important;
@@ -114,7 +114,7 @@ header nav.navbar { padding: 0; }
 header .btn-Link.mobOnly { display: none; } 
 
 header ul.navbar-nav li {
-    padding: 0 26px;
+    padding: 0 20px;
     align-items: center;
     display: inline-flex;
 }
@@ -136,7 +136,7 @@ header ul.navbar-nav li.nav-item.btn-Link {
     padding-left: 12px;
 }
 header ul.navbar-nav li.nav-item.dropdown.btn-Link {
-    margin-left: 26px;
+    margin-left: 20px;
     padding-left: 0 !important;
 }
 header .nav-link.btn-login.dropdown-toggle::after{ display: none; }
@@ -223,31 +223,35 @@ body.offcanvas-active{
 
 .videoWraper{
     position: relative;
+    text-align: center;
 }
 video.video-banner {
     width: 100%;
-    max-width: 100%;
-    height: 100%;
+    max-width: 1024px;
+    height: 574px;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border-radius: 18px;
-    max-height: 750px;
+    max-height: 574px;
 }
+
+.bannerWraper .getstartWrape.mt-5{ margin-top: 40px !important; }
+
 .bannerWraper {
     background: linear-gradient(58deg, #000 19.15%, #2EE1D5 198.11%);
 }
 .bnr_content{ 
     color: var(--white); 
     text-align: center; 
-    padding: 80px 0;
+    padding: 100px 0 40px;
 }
 
 .bnr_content h1{
-    font-size: 96px;
+    font-size: 72px;
     font-style: normal;
     font-weight: 600;
-    line-height: 108px; 
+    line-height: 80px; 
     margin: 0 0 20px;
     padding: 0;
 }
@@ -256,34 +260,36 @@ video.video-banner {
     color: var(--primary);
 }
 .bnr_content h6{
-    font-size: 40px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 56px;
-    margin: 5px 0;
+    line-height: 32px;
+    margin: 0;
     padding: 0;
 }
 .bnr_content .paragraph{
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
+    font-weight: 300;
+    line-height: 24px;
 
     max-width: 1000px;
     margin: 0 auto;
 }
 .bnr_content.innerBnr .paragraph{  max-width: 1040px; }
 
+.featured_img.innerBnr .img_space img{ max-height: 470px; }
+
 .paragraph{
-    font-size: 20px;
+    font-size:18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 28px; 
+    font-weight: 300;
+    line-height: 24px; 
     color: var(--white);
 }
 .appIcons .btnSpace { display: inline-flex; margin: 0px 4px; }
 
-.appIcons .btnSpace img { height: 52px; width: auto; }
+.appIcons .btnSpace img { height: 48px; width: auto; }
 
 .appIcons .btnSpace span { 
     display: block;  
@@ -292,7 +298,7 @@ video.video-banner {
     font-style: italic;
     font-weight: 400;
     line-height: 16px; 
-    padding: 1px 0;
+    padding: 2px 0 0;
 }
 
 .container { max-width: 1285px; }
@@ -302,18 +308,22 @@ video.video-banner {
 .getstartWraper{
     background-color: var(--secondary);
     color: var(--white);
-    padding: 40px;
+    padding: 32px 48px;
     border-radius: 24px;
 }
+
+.getstartWraper.signupWrap { padding: 32px 40px; }
+ 
 .algTxt{
     display: flex;
     align-items: center;
 }
 .getstartWraper h2{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     margin: 0px 0 15px;
     padding: 0;
+    line-height: 40px;
 }
 .getstartWraper h2 strong{ font-weight: 600; color: var(--primary);}
 
@@ -335,7 +345,7 @@ video.video-banner {
 }
 
 .getstartWraper h6{
-    font-size: 28px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -344,10 +354,10 @@ video.video-banner {
 }
 .mainTitle{
     color: var(--white);
-    font-size: 60px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
-    line-height: 64px;
+    line-height: 48px;
 }
 
 .mainTitle strong{  font-weight: 600; color: var(--primary);}
@@ -376,7 +386,7 @@ video.video-banner {
 }
 
 .secSpace{
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .form-control{
@@ -386,9 +396,9 @@ video.video-banner {
     border-radius: 8px;
     outline: 0 !important;
     box-shadow: inherit !important;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
 }
 .getinwraper .form-control{
     background: rgba(255, 255, 255, 0.08);
@@ -411,10 +421,10 @@ video.video-banner {
 
 .btn-primary{
     color: var(--white);
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; 
+    line-height: 16px; 
     border: 1px solid var(--white);
     border-radius: 8px;
     min-height: 48px;
@@ -427,10 +437,13 @@ video.video-banner {
 .btn-primary:hover, .btn-primary:focus{
     background-color: var(--primary) !important;
     color: var(--black) !important;
+    border-color: var(--primary) !important;
 }
+.tabsSty .contSpc .btn-primary{  min-height: 40px; }
+
 .ftrAdjut .getBtn.btn { min-width: 200px; }
 
-.homeOnly{ padding-bottom: 190px; }
+.homeOnly{ padding-bottom: 140px; }
 
 .ftrAdjut{
     padding: 80px 0 25px;
@@ -449,19 +462,21 @@ footer{
 }
 
 footer .f_logo img {
-    max-height: 56px;
+    max-height: 48px;
     width: auto;
 }
 .f_about h6{
-    font-size: 20px;
+    font-size: 18px;
     color: var(--White, #FFF);
     font-style: normal;
     font-weight: 500;
-    line-height: 28px; 
+    line-height: 24px;
 }
 .f_about .appIcons .btnSpace{ text-align: center; }
 
-.footer_wrapper .appIcons .btnSpace img {  height: 38px; }
+.footer_wrapper .appIcons .btnSpace img {  height: 40px !important; }
+
+.f_about .appIcons .btnSpace span{ font-size: 9px; }
 
 .footerBtm{
     border-top: 0.5px solid rgb(255 255 255 / 21%);
@@ -471,10 +486,10 @@ footer .f_logo img {
     align-items: center;
 }
 .footerBtm .copyrights{
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; 
+    line-height: 16px; 
 }
 .socialFtr ul li{
     list-style: none;
@@ -499,12 +514,12 @@ footer .f_logo img {
 
 footer .f_links ul {
     color: var(--white);
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
+    font-weight: 300;
+    line-height: 24px;
 }
-footer .f_links ul li{ margin-bottom: 25px; }
+footer .f_links ul li{ margin-bottom: 24px; }
 
 footer .f_links ul li:last-child{ margin-bottom: 0; }
 
@@ -519,13 +534,16 @@ footer .f_links ul li a:hover { color: var(--primary); }
     background: rgba(255, 255, 255, 0.10);
     padding: 24px;
     color: var(--white);
-    min-height: 340px;
+    min-height: 288px;
+    border: 0.5px solid transparent
 }
+.whyChoose .chooseBx:hover{ border: 0.5px solid #209F96;  }
+
 .chooseBx .contArea h4{
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 28px;
     margin: 10px 0;
     padding: 0;
 }
@@ -536,10 +554,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .secSpace.whyChoose{ padding-top: 40px; }
 
 .chooseBx .contArea .paragraph{
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px; 
+    line-height: 20px; 
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -554,7 +572,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .chooseBx .imgArea img{ max-height: 56px; width: auto; }
 
 .whyChoose .titleArea, .techWrap .titleArea {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .ftrWrap .appIcons .btnSpace img{ height: 69px; width: auto; }
@@ -568,16 +586,17 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding: 60px 38px 38px 38px;
     color: var(--white);
     position: relative;
+    min-height: 460px;
     overflow: hidden;
 }
 .priceBox .offerLabel {
     padding: 5px 15px;
     background: var(--primary);
     color: var(--black);
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 18px;
     width: 100%;
     position: absolute;
     left: 0;
@@ -586,7 +605,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     min-height: 38px;
 }
 .priceBox h3{
-    font-size: 76px;
+    font-size: 56px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -601,11 +620,11 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding-left: 10px;
 }
 .priceBox h6{
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px; 
-    margin: 18px 0;
+    line-height: 28px; 
+    margin: 16px 0;
 }
 .priceBox ul{
     list-style: none;
@@ -613,75 +632,81 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding: 0;
 }
 .priceBox ul li{
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    padding-left: 38px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-left: 30px;
     position: relative;
-    margin: 20px 0;
+    margin: 16px 0;
 }
 .priceBox ul li::before{
     content: ' ';
     background-image: url(../images/icons/tick.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     position: absolute;
     left: 0;
     top: 2px;
 }
-.priceBox .btn-primary{ width: 100%; font-size: 18px; min-height: 56px; margin: 10px 0 0;}
+.priceBox .btn-primary{ width: 100%; font-size: 16px; min-height: 48px; margin: 10px 0 0;}
 
 .priceWraper .titleArea .mainTitle strong{ display: block; }
 
-.priceWraper .titleArea .mainTitle{ margin-bottom: 64px; }
+.priceWraper .titleArea .mainTitle{ margin-bottom: 48px; }
 
 .titlSpace{ margin-bottom: 64px; }
+
+.prdctList.tab-pane .contSpc {  padding-left: 8%; }
 
 .tabFrame{
     background-image: url(../images/others/frame-tab.png);
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    width: 698px;
-    height: 471px;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 26px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
 }
 .tabFrame::before{
     background-image: url(../images/others/frame-tab1.png);
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    width: 698px;
-    height: 471px;
     position: absolute;
     left: 0;
     top: 0;
     display: block;
     content:  ' ';
 }
+.tabFrame, .tabFrame::before{
+    width: 502px;
+    height: 339px;
+}
 
 .imgFrames{ position: relative; text-align: center; }
 
 .frame_shadow{
     position: absolute;
-    left: 0;
-    top: -60px;
+    left: 9%;
+    top: -79px;
     max-width: 100%;
-    opacity: 0.8;
-    z-index: -1;
+    opacity: 1;
+    z-index: 0;
+    width: 670px;
+    height: 520px;
 }
-.tabFrame .prdImg{ min-height: 436px; width: 100%; object-fit: cover; }
+.tabFrame .prdImg{ min-height: 315px; width: 100%; object-fit: cover; }
 
 .tabsSty .aligCont{
     display: flex;
     align-items: center;
 }
+.imgFrames.webOnly .webImg .prdImg { width: 60%; }
 .imgFrames.mobOnly .tabFrame{
     background-image: url(../images/others/mobile-frame.png);
     width: 279px;
@@ -712,9 +737,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .imgFrames.mobOnly{ display: none; }
 
 .tabsSty .nav.nav-tabs {
-    /* border-radius: 20px; */
     background: transparent;
-    min-height: 103px;
+    min-height: 74px;
     border: 0;
     overflow: hidden;
 
@@ -725,7 +749,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 .tabsSty .nav-tabs .nav-item {
     background: rgba(255, 255, 255, 0.10);
-    max-width: 170px;
+    max-width: 144px;
     overflow: hidden;
 }
 .tabsSty .nav-tabs .nav-item:first-child {
@@ -739,7 +763,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .tabsSty .nav-tabs .nav-link{
     display: inline-flex;
-    padding: 16px 0px;
+    padding: 10px 0px 8px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -747,54 +771,59 @@ footer .f_links ul li a:hover { color: var(--primary); }
     border: 0;
     border-radius: 0;
     border-bottom: 4px solid transparent;
-    min-height: 100px;
+    min-height: 74px;
     color: var(--white);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px; 
+
+    opacity: 0.8;
 }
 .tabsSty .nav-tabs .nav-link.active {
     color: var(--white);
     background-color: transparent;
     border-bottom: 4px solid var(--primary);
     font-weight: 600;
+    opacity: 1;
 }
 .tabsSty .nav-tabs span.imgSpc {
     display: block;
-    height: 47px;
+    height: 35px;
 }
-.tabsSty .nav-tabs span.imgSpc img { max-height: 40px; }
+.tabsSty .nav-tabs span.imgSpc img { max-height: 26px; }
 
 
 .prdctList .paragraph{
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 300;
     margin-bottom: 10px;
-    line-height: 32px; 
+    line-height: 20px; 
 }
-.tabsSty .tab-content{ margin-top: 60px; }
+.tabsSty .tab-content{ margin-top: 40px; }
+
+.tabsSty .tab-content.ftrOnly{ margin-top: 48px; }
 
 .tabsSty .tab-content.vertTab-cont{ margin-top: 20px; }
 
 .appDownload .getstartWraper{ padding-top: 32px; padding-bottom: 32px; }
 
 .bnr_content.innerBnr h1 {
-    font-size: 72px;
-    line-height: 88px;
+    font-size: 56px;
+    line-height: 64px;
 }
 .bnr_content.innerBnr h1 strong{
     display: block;
 }
 .abt_content .paragraph {
-    font-size: 24px;
+    font-size: 20px;
     line-height: inherit;
 }
 .abt_content .paragraph p{
     padding: 0;
     margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
 }
 .teamBxs .teamImg {
     border-radius: 20px;
@@ -845,16 +874,21 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .privacy .bnr_content{ padding-bottom: 0; }
 
 .norm_conts .paragraph, .norm_conts .paragraph p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
     margin: 0 0 20px;
 }
+.norm_conts .paragraph strong, .norm_conts .paragraph p strong { font-weight: 600; }
+
+.norm_conts .paragraph p{ line-height: 20px; }
+
+.norm_conts a{ color: var(--white);  text-decoration: underline !important;}
+
 .norm_conts h6 {
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 20px;
     margin: 25px 0 12px;
     padding: 0;
 }
@@ -865,41 +899,43 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .norm_conts ul { 
     padding: 0 0 0 15px; 
     margin: 0 0 20px;    
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px; 
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px; 
 }
 
-.secSpace.norm_conts { padding-bottom: 150px; } 
+.secSpace.norm_conts { padding-bottom: 150px; padding-top: 48px; } 
 
 .bgRemove{ background: transparent; }
 
 .titleAdjust .mainTitle{ max-width: 1000px; margin: 0 auto; }
 
-.featuredTabs .tabsSty .nav.nav-tabs {
+/* .featuredTabs .tabsSty .nav.nav-tabs {
     width: 100%;
     justify-content: space-between;
     display: flex;
     max-width: 1080px;
 }
-.featuredTabs .tabsSty .nav.nav-tabs .nav-item { max-width: 100%; }
+.featuredTabs .tabsSty .nav.nav-tabs .nav-item { max-width: 100%; } */
 
 .featuredTabs .tabFrame, .featuredTabs .tabFrame::before {
-    width: 545px;
-    height: 368px;
+    width: 491px;
+    height: 330px;
 }
 .featuredTabs .tabFrame{
-    padding: 15px;
-    border-radius: 19px;
+    padding: 10px;
+    border-radius: 15px;
 }
-.featuredTabs .tabFrame .prdImg { min-height: 340px; }
+.featuredTabs .tabFrame .prdImg { min-height: 310px; }
+
+.featuredTabs .frame_shadow{ left: 0; }
 
 .featuredTabs{ color: var(--white); }
 
 .featuredTabs .vertTab h3 {
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 28px;
 }
 .featuredTabs .vertTab .nav-link {
@@ -916,13 +952,15 @@ footer .f_links ul li a:hover { color: var(--primary); }
 .featuredTabs .vertTab h6 {
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 20px;
     margin: 5px 0;
 }
 .featuredTabs .vertTab .nav-link.active{
     border-left: 4px solid var(--primary);
 }
+.featuredTabs .tabsSty .nav-tabs .nav-item {  max-width: 180px; }
+
 .featuredTabs .vertTab .nav-link.active h3{
     color: var(--primary);
 }
@@ -930,6 +968,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     padding: 0 0 32px;
     border-left: 4px solid rgba(46, 225, 213, 0.20);
 }
+.featuredTabs .vertTab .tabLine:last-child{ padding-bottom: 0; }
+
 .featuredTabs .tabsSty .aligCont { align-items: inherit; }
 
 .wpcf7-response-output {
@@ -953,6 +993,39 @@ footer .f_links ul li a:hover { color: var(--primary); }
     background: #46b45029 !important;
     color: #46b450 !important;
 }
+.bannerWraper .getstartWraper.mt-5 {
+    margin-top: 40px !important;
+}
+.newShadow{
+    background: linear-gradient(44deg, #000 32.13%, #2EE1D5 237.89%);
+}
+.secSpace.whyChoose.inner{ padding-top: 60px; }
+ 
+.whyChoose.inner .chooseBx { min-height: 244px; }
+
+.abt_content .spcWeb{ padding-left: 4%; }
+
+.abt_content .spcWeb .paragraph p:last-child{ margin-bottom: 0; }
+
+.typed-cursor{
+    color: var(--primary);
+}
+.webImg, .mobImg{
+    position: relative;
+    z-index: 1;
+}
+.txtHeight { min-height: 80px; }
+
+.priceArea .priceBox ul {
+	min-height:240px;
+}
+.priceArea .priceBox h3 span {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.priceArea .col-md-6:first-child h4{ display: none; }
+
 
 
 /* MEDIA-QUERY START */
@@ -975,18 +1048,16 @@ footer .f_links ul li a:hover { color: var(--primary); }
 @media all and (max-width: 991px) {
 
     .bnr_content h1 {
-        font-size: 76px;
-        line-height: 76px;
+        font-size: 56px;
+        line-height: 70px;
     }
     .bnr_content h6 {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 26px;
     }
     header ul.navbar-nav li {
         padding: 0 16px;
     }
-    header .nav-link { font-size: 16px; }
-    header ul.navbar-nav li.nav-item.dropdown.btn-Link {  margin-left: 15px; }
     .bnr_content .paragraph, .getstartWraper h6 {
         font-size: 20px;
         line-height: 30px;
@@ -995,34 +1066,30 @@ footer .f_links ul li a:hover { color: var(--primary); }
         margin-bottom: 35px;
     }
     .mainTitle {
-        font-size: 45px;
-        line-height: 51px;
+        font-size: 38px;
         margin-bottom: 20px;
     }
     .container {      
         padding: 0 16px;
     }
-    .paragraph {
-        font-size: 18px;
-        line-height: 26px;
-    }
     .whyChoose .chooseBx {
         margin-bottom: 20px;
     }
-
-    .priceBox h3 { font-size: 65px; }
-
-    .priceBox h6 {  font-size: 22px; line-height: 24px; }
-
     .priceBox { padding-left: 30px; padding-right: 30px;}
   
     .bnr_content.innerBnr h1 {
-        font-size: 60px;
-        line-height: 68px;
+        font-size: 50px;
+        line-height: 60px;
     }
     .tabsSty .tab-content.vertTab-cont { margin: 0 0; }
     .imgFrames.webOnly {  margin-bottom: 30px; }
 
+    .featuredTabs .frame_shadow {
+        left: 12%;
+        width: 638px;
+        height: 456px;
+    }
+    .tabsSty .tab-content {  margin-top: 10px; }
 
 }
 @media all and (max-width: 767px) {
@@ -1049,7 +1116,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .mobile-offcanvas.show{
         visibility: visible;
         transform: translateX(0);
-        padding: 24px ;
+        padding: 10px 24px 24px;
     }
     .mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
         display: block;
@@ -1083,24 +1150,21 @@ footer .f_links ul li a:hover { color: var(--primary); }
     video.video-banner {
         border-radius: 5px;
         height: 100%;
-        max-height: 215px;
     }
     .navbar-brand {
         display: inline-block;
         padding: 0;
     }
-    .bannerWraper .getstartWraper.mt-5 {
-        margin-top: 40px !important;
-    }
+   
     .getstartWraper h2 {
-        font-size: 32px;
+        font-size: 24px;
         line-height: normal;
     }
     .getstartWraper h6 {
         font-size: 16px;
         line-height: 20px;
     }
-    .getstartWraper{ padding: 24px 18px; }
+    .getstartWraper, .getstartWraper.signupWrap{ padding: 24px 16px; }
 
     .getstartWraper .getBtn.btn {
         width: 100%;
@@ -1117,7 +1181,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
         margin-bottom: 0 !important;
     }
     .mainTitle.mb-4 { margin-bottom: 0.8rem !important; }
-    .secSpace, .secSpace.norm_conts {
+    .secSpace, .secSpace.norm_conts, .secSpace.whyChoose.inner {
         padding: 40px 0;
     }
     .ftrWrap{ padding-top: 10px; }
@@ -1171,7 +1235,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
         line-height: 20px;
         display: block;
         width: 100%;
-        padding: 10px 5px !important;
+        padding: 10px 0px !important;
     }
     header .btn-Link.mobOnly {
         padding-bottom: 0px !important;
@@ -1187,20 +1251,22 @@ footer .f_links ul li a:hover { color: var(--primary); }
     }
     header .btn-close {
         color: var(--white) !important;
-        font-size: 20px !important;
+        font-size: 27px !important;
         opacity: 1 !important;
+        height: auto;
     }
     header, .sticky {
         padding: 10px 0;
     }
     .sticky .headerwraper {
-        padding: 16px;
+        padding: 6px 16px;
+        margin: 0 10px;
     }
     header .headerwraper {
-        padding: 15px 0px;
+        padding: 6px 16px;
     }
     .container.headCont {
-        padding: 0 10px;
+        padding: 6px 0px;
     }
   
     .getstartWraper.signupWrap h2{
@@ -1285,7 +1351,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .techWrap .titleArea { margin-bottom: 40px; }
  
-    .tabsSty .tab-content { margin-top: 0; }
+    .tabsSty .tab-content, .tabsSty .tab-content.ftrOnly { margin-top: 0; }
 
     .bnr_content.innerBnr h1 {
         font-size: 40px;
@@ -1320,7 +1386,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .appDownload .text-end { text-align: center !important; } 
 
-    .appDownload .getstartWraper {  padding-top: 24px;  padding-bottom: 24px; }
+    .appDownload .getstartWraper {  padding: 16px 24px; }
 
     .norm_conts .paragraph, .norm_conts .paragraph p, .norm_conts ul { margin: 0 0 15px; font-size: 14px;  line-height: 18px; }
 
@@ -1336,6 +1402,18 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .featuredTabs .vertTab .tabLine { padding: 0 0 30px; }
 
+    .bnr_content.innerBnr h1 strong{ display: inline-block; }
+
+    .abt_content .spcWeb { padding-left: calc(var(--bs-gutter-x)* .5); }
+
+    .txtHeight { min-height: 100px; }
+
+    header .logo-img { max-height: 28px; }
+
+    .f_about .appIcons .btnSpace{ margin-left: 0; margin-right: 8px; }  
+
+    .webImg {  padding: 30px 0; }
+    .appDownload .appIcons.my-2{ margin-bottom: 0 !important; }
 
 }
 @media all and (max-width: 580px) {
@@ -1346,25 +1424,41 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 @media all and (max-width: 480px) {
     .bannerWraper .getstartWraper h2 strong {  display: block; }
+
     .getstartWraper.signupWrap h2{ padding-right: 2%; }
+
     .appDownload .getstartWraper.signupWrap h2{ padding: 0; }
+
     .scrollDiv {
         max-width: 600px;
         overflow-x: scroll;
         margin: 0 -16px;
     }
     .tabsSty  .scrollDiv .nav.nav-tabs{  width: 500px;}
+    
     .tabsSty .scrollDiv .nav-tabs .nav-item:first-child, .tabsSty .scrollDiv .nav-tabs .nav-item:last-child{ border-radius: 0; }
+    /* video.video-banner { max-height: 215px; } */
+   
+    .appDownload .appIcons .btnSpace img {   height: 42px !important;  }
+
+    .appDownload .appIcons {  display: flex; justify-content: flex-start;  }
+
+    .appDownload .appIcons .btnSpace{ margin-left: 0; margin-right: 8px; }
+
+
+ 
 }
-@media all and (max-width: 380px) {
+@media all and (max-width: 400px) {
     .getstartWraper.signupWrap h2{ padding-right: 0%; }
+    .appDownload .appIcons .btnSpace {   margin-bottom: 10px; }
 }
 
 @media all and (max-width: 360px) {
-    .bnr_content h1 {  font-size: 40px; line-height: 44px; }
+    .bnr_content h1 {  font-size: 33px; line-height: 40px; }
     .getstartWraper h2 { font-size: 28px; }
     .mainTitle {  font-size: 32px;  line-height: 34px; }
     .priceBox h3 { font-size: 46px; }
+    .txtHeight { min-height: 85px; }
    
 }
 @media all and (max-width: 320px) {
