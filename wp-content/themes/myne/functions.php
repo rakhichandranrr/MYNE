@@ -686,10 +686,9 @@ wp_enqueue_script('popup-min', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-
 
 	wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array('jquery'), '', true);
 
-	wp_enqueue_script('typed.js', 'https://cdn.jsdelivr.net/npm/typed.js@2.0.12', array('jquery'), '', true);
+
 
 	wp_enqueue_script('custom', get_template_directory_uri() . '/assets/js/custom.js?v=' . time(), array('jquery'), '', true);
-	
 }
 
 add_action('wp_enqueue_scripts', 'myne_enqueue_styles_js');
@@ -713,9 +712,9 @@ $play_icon = get_field('play_store_icon', 'option');
 	
 if($app_icon_url)
 {
-	$app_css = 'style="opacity:0.5;"';
-	$app_url = '#';//$app_icon_url;
-	$app_coming_soon ='<span>Coming soon</span>';
+	$app_css = '';
+	$app_url = $app_icon_url;
+	$app_coming_soon ='';
 }
 else
 {
@@ -736,8 +735,8 @@ else
 	$play_coming_soon ='<span>Coming soon</span>';
 }
 
-$content = '<div class="btnSpace text-center"> <a /*href="'.$app_url.'" target="_blank"*/><img '.$app_css.' src="'.$app_icon['url'].'" alt="img">'.$app_coming_soon.'</a> </div>
-        <div class="btnSpace text-center"> <a /*href="'.$play_url.'" target="_blank"*/ ><img '.$play_css.' src="'.$play_icon['url'].'" alt="img"> '. $play_coming_soon.'</a> </div>';
+$content = '<div class="btnSpace text-center"> <a href="'.$app_url.'" target="_blank"><img '.$app_css.' src="'.$app_icon['url'].'" alt="img">'.$app_coming_soon.'</a> </div>
+        <div class="btnSpace text-center"> <a href="'.$play_url.'" target="_blank" ><img '.$play_css.' src="'.$play_icon['url'].'" alt="img"> '. $play_coming_soon.'</a> </div>';
 	  
 	  return $content;
 	
