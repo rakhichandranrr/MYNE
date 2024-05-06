@@ -664,7 +664,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .titlSpace{ margin-bottom: 64px; }
 
-.prdctList.tab-pane .contSpc {  padding-left: 8%; }
+.prdctList.tab-pane .contSpc {  padding-left: 10%; padding-right: 7%; }
 
 .tabFrame{
     background-image: url(../images/others/frame-tab.png);
@@ -1432,7 +1432,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .appDownload .appIcons.my-2{ margin-bottom: 0 !important; }
 
-    .prdctList.tab-pane .contSpc{   padding-left: calc(var(--bs-gutter-x) * .5) }
+    .prdctList.tab-pane .contSpc{ padding-left: calc(var(--bs-gutter-x) * .5); padding-right: calc(var(--bs-gutter-x) * .5); }
 
 }
 @media all and (max-width: 580px) {
