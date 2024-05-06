@@ -882,7 +882,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .privacy .innerBnr h1 strong{ display: inline-block; }
 
-.privacy{ background: transparent; padding-bottom: 0 !important; }
+.privacy{ background: transparent !important; padding-bottom: 0 !important; }
 
 .privacy .bnr_content{ padding-bottom: 0; }
 
@@ -916,6 +916,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     font-weight: 300;
     line-height: 20px; 
 }
+.norm_conts ol li {  margin: 0 0 5px; }
 
 .secSpace.norm_conts { padding-bottom: 150px; padding-top: 48px; } 
 
