@@ -1440,8 +1440,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .featuredTabs .imgFrames.mobOnly {  margin: 30px 0; }
 
     .getinwraper .formSpc .form-group.mb-2:last-child { margin-bottom: 0 !important; }
-    
-    .vertTab {  margin: 15px 0; }
+
+    .vertTab {  margin: 15px 0;  }
 
     .featuredTabs .vertTab h3 { font-size: 20px; }
 
