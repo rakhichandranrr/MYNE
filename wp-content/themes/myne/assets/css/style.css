@@ -1370,6 +1370,13 @@ footer .f_links ul li a:hover { color: var(--primary); }
         height: 270px;
         object-fit: cover;
     }
+    
+    .secSpace.techWrap {  padding-bottom: 20px; }
+
+    .tabsSty .contSpc .btn-primary {
+        min-height: 48px;
+        margin-bottom: 0 !important;
+    }
 
     .tabsSty .btn-primary{ width: 100%; }
 
