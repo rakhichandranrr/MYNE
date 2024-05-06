@@ -768,7 +768,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .tabsSty .nav-tabs .nav-link{
     display: inline-flex;
-    padding: 10px 0px 8px;
+    padding: 10px 0px 7px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -794,7 +794,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 .tabsSty .nav-tabs span.imgSpc {
     display: block;
-    height: 35px;
+    height: 36px;
 }
 .tabsSty .nav-tabs span.imgSpc img { max-height: 26px; }
 
@@ -1107,7 +1107,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .prdctList.tab-pane .contSpc{ padding-left: 15%; padding-right: 15%; }
 
     .featuredTabs .padSpc{  padding-right: calc(var(--bs-gutter-x) * .5); }
-    
+
 
 }
 @media all and (max-width: 767px) {
