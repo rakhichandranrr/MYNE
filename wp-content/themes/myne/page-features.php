@@ -68,40 +68,40 @@ get_header();
       
         <div class="prdctList tab-pane <?php if($i==0){?>active<?php }?>" id="fill-tabpanel-<?php echo $i;?>" role="tabpanel" aria-labelledby="fill-tab-<?php echo $i;?>">
           <div class="row aligCont">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 padSpc">
               <div class="tab-content vertTab-cont" id="v-pills-tabContent">
                 
-                <?php
-				if($feature_res['features_content'])
-				{
-					$j=0;
-					foreach($feature_res['features_content'] as $features_content_res)
-					{
-				?>
+                  <?php
+                  if($feature_res['features_content'])
+                  {
+                    $j=0;
+                    foreach($feature_res['features_content'] as $features_content_res)
+                    {
+                  ?>
                 
                 
-                <div class="tab-pane fade show <?php if($j==0){?>active<?php }?>" id="sub_content_<?php echo $j.$i;?>" role="tabpanel" aria-labelledby="sub_content_tab_<?php echo $j.$i;?>">
-                  <div class="imgFrames">
-                   
-                    <div class="webImg webOnly"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
-                    <!-- <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div> -->
+                  <div class="tab-pane fade show <?php if($j==0){?>active<?php }?>" id="sub_content_<?php echo $j.$i;?>" role="tabpanel" aria-labelledby="sub_content_tab_<?php echo $j.$i;?>">
+                    <div class="imgFrames">
+                    
+                      <div class="webImg webOnly"> <img class="prdImg" src="<?php echo $features_content_res['image_web']['url'];?>" alt="image"> </div>
+                      <!-- <img class="frame_shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/others/shadow.svg" alt="img"> </div> -->
+                    
+                      <!-- MOBILE-VIEW START -->
+                      <div class="mobImg mobOnly">
+                        <img class="prdImg" src="<?php echo $features_content_res['image_mobile']['url'];?>" alt="image"> 
+                      </div>
+                      
+                      <!-- <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_mobile']['url'];?>" alt="image"> </div> -->
+                      
+                      <!-- MOBILE-VIEW END --> 
+                      </div>
+                  </div>
                   
-                    <!-- MOBILE-VIEW START -->
-                    <div class="mobImg mobOnly">
-                      <img class="prdImg" src="<?php echo $features_content_res['image_mobile']['url'];?>" alt="image"> 
-                    </div>
-                    
-                     <!-- <div class="tabFrame"> <img class="prdImg" src="<?php echo $features_content_res['image_mobile']['url'];?>" alt="image"> </div> -->
-                    
-                    <!-- MOBILE-VIEW END --> 
-                    </div>
-                </div>
-                
-                <?php
-				$j++;
-					}
-				}
-				?>
+                  <?php
+                  $j++;
+                    }
+                  }
+                  ?>
            
                 
               </div>

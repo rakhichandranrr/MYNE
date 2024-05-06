@@ -971,7 +971,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     color: var(--primary);
 }
 .featuredTabs .vertTab .tabLine{
-    padding: 0 0 32px;
+    padding: 0 0 30px;
     border-left: 4px solid rgba(46, 225, 213, 0.20);
 }
 .featuredTabs .vertTab .tabLine:last-child{ padding-bottom: 0; }
@@ -1033,6 +1033,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
     line-height: 32px;
 }
 .priceArea .col-md-6:first-child h4{ display: none; }
+
+.featuredTabs .padSpc{  padding-right: 0; }
 
 
 
@@ -1103,6 +1105,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .imgAlign .webImg{ text-align: center; }
 
     .prdctList.tab-pane .contSpc{ padding-left: 15%; padding-right: 15%; }
+
+    .featuredTabs .padSpc{  padding-right: calc(var(--bs-gutter-x) * .5); }
+    
 
 }
 @media all and (max-width: 767px) {
@@ -1418,8 +1423,6 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .featuredTabs .vertTab h3 { font-size: 20px; }
 
     .featuredTabs .vertTab h6 { font-size: 14px;  line-height: 18px; }
-
-    .featuredTabs .vertTab .tabLine { padding: 0 0 30px; }
 
     .bnr_content.innerBnr h1 strong{ display: inline-block; }
 
