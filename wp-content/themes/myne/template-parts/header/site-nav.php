@@ -33,6 +33,11 @@ if (strpos($url,'price') !== false) {
     </li>
     <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn btn-login" href="<?php echo $header['log_in_as_customer_mobile_url'];?>">Log in as Customer</a> </li>
     <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn btn-login" href="<?php echo $header['log_in_as_wealth_planner_mobile_url'];?>">Log in as Wealth Planner</a> </li>
-    <li class="nav-item btn-Link"> <a class="nav-link btn" href="<?php echo $header['get_started_url'];?>">Get Started</a> </li>
+    <li class="nav-item dropdown btn-Link"> <a class="nav-link dropdown-toggle btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Get Started</a> 
+      <ul class="dropdown-menu">
+        <li class="nav-item"> <a class="nav-link" href="<?php echo $header['get_started_url'];?>">Sign up for client user </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="<?php echo $header['login_wealth_planner_url'];?>">Sign up page</a> </li>
+      </ul>
+    </li>
   </ul>
 </div>
