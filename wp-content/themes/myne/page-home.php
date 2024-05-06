@@ -197,7 +197,7 @@ $technology = get_field('technology_section');
 		  ?>
             <h3>
 				<?php echo $pricing_res['price_prefix']?><?php if($pricing_res['price_suffix']){?><strong>/<?php echo $pricing_res['price_suffix'];?></strong><?php }?>
-				<?php if($pricing_res['our_choice_heading']){?> <span><s>$120 /year</s></span><?php } ?>
+				<span><s><?php echo $pricing_res['old_price'];?></s></span>
 			</h3>
             <h6><?php echo $pricing_res['pricing_content_title']?></h6>
             <?php echo $pricing_res['pricing_content']?> <a href="<?php echo $pricing_res['pricing_button_url']?>" class="btn btn-primary"><?php echo $pricing_res['pricing_button_text']?></a> </div>
@@ -248,3 +248,21 @@ $footer = get_field('footer', 'option',true);
 <?php
 get_footer();
 ?>
+<script>
+ // Initialize Typed.js with shuffled text
+ var typed = new Typed('#types', {
+  strings: [
+    '<?php echo $banner['banner_heading1'];?>', 
+    '<?php echo $banner['banner_heading_2'];?>'
+  
+  ],
+  typeSpeed: 80,
+  backSpeed: 0,
+  startDelay: 0,
+  cursorChar: ' ',
+  shuffle: false,
+  smartBackspace: false,
+  loop: true,
+  loopCount: Infinity
+});
+</script>
