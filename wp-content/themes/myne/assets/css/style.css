@@ -147,6 +147,10 @@ header .nav-link.btn.btn-login, header .nav-link.btn.btn-login:hover{
     outline: 0;
     box-shadow: inherit;
 }
+ul.dropdown-menu.signUp.show {
+    right: 0;
+    left: inherit !important;
+}
 .logoMobile, .mobileHeader{ display: none; }
 
 header .btn-close{ color: var(--white); }
