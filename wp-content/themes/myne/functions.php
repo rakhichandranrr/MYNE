@@ -713,9 +713,9 @@ $play_icon = get_field('play_store_icon', 'option');
 	
 if($app_icon_url)
 {
-	$app_css = 'style="opacity:0.5;"';
-	$app_url = '#';//$app_icon_url;
-	$app_coming_soon ='<span>Coming soon</span>';
+	$app_css = '';
+	$app_url = $app_icon_url;//$app_icon_url;
+	$app_coming_soon ='';
 }
 else
 {
