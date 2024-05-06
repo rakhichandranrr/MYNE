@@ -157,12 +157,12 @@ $(document).ready(function() {
 });
 // SCROLL-ACTIVE END
 
-var str = escape("What's is your <strong>net worth?</strong>");
+
 
  // Initialize Typed.js with shuffled text
  var typed = new Typed('#types', {
   strings: [
-    str, 
+    'What is your <strong>net worth?</strong>', 
     'Are your <strong>assets protected?</strong>'
   
   ],
