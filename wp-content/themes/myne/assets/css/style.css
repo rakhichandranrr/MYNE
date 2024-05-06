@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .topBg{
-    background: linear-gradient(58deg, #000 26.15%, #2EE1D5 198.11%);
+    background: linear-gradient(72deg, #000 18%, #2EE1D5 198.11%);
 }
 header .logo-img {
     max-height: 30px;
