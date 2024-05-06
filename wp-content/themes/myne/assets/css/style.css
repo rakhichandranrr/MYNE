@@ -1019,7 +1019,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     position: relative;
     z-index: 1;
 }
-.webImg img{ height: 400px; object-fit: cover; }
+.webImg img{ height: 420px; object-fit: cover; }
 
 .txtHeight { min-height: 80px; }
 
