@@ -160,7 +160,7 @@ $(document).ready(function() {
 
 
  // Initialize Typed.js with shuffled text
- var typed = new Typed('#types', {
+ /*var typed = new Typed('#types', {
   strings: [
     'What is your <strong>net worth?</strong>', 
     'Are your <strong>assets protected?</strong>'
@@ -174,4 +174,4 @@ $(document).ready(function() {
   smartBackspace: false,
   loop: true,
   loopCount: Infinity
-});
+});*/
