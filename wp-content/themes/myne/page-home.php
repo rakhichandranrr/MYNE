@@ -247,13 +247,15 @@ $footer = get_field('footer', 'option',true);
 <!-- SIGNUP END -->
 <?php
 get_footer();
+$formatted_text1 = trim($banner['banner_heading1']);
+$formatted_text2 = trim($banner['banner_heading_2']);
 ?>
 <script>
- // Initialize Typed.js with shuffled text
- var typed = new Typed('#types', {
+$(document).ready(function() {
+  var typed = new Typed('#types', {
   strings: [
-    '<?php echo $banner['banner_heading1'];?>', 
-    '<?php echo $banner['banner_heading_2'];?>'
+    "<?php echo $formatted_text1;?>", 
+    "<?php echo $formatted_text2;?>"
   
   ],
   typeSpeed: 80,
@@ -264,5 +266,6 @@ get_footer();
   smartBackspace: false,
   loop: true,
   loopCount: Infinity
+});
 });
 </script>
