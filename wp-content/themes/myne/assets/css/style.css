@@ -1430,6 +1430,8 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .appDownload .appIcons.my-2{ margin-bottom: 0 !important; }
 
+    .prdctList.tab-pane .contSpc{ calc(var(--bs-gutter-x) * .5) }
+
 }
 @media all and (max-width: 580px) {
     .tabsSty .nav-tabs .nav-link{ font-size: 12px; }
