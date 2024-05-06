@@ -33,7 +33,7 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
       </div>
       <div class="f_links col-md-4 col-lg-3">
         <ul>
-          <li> <a href="<?php echo site_url();?>/about-us/">Security</a> </li>
+          <li> <a href="<?php echo site_url();?>/security/">Security</a> </li>
           <li> <a href="<?php echo site_url();?>/features/">Features</a> </li>
           <li> <a href="<?php echo site_url();?>/terms-conditions/">Terms & Conditions</a> </li>
           <li> <a href="<?php echo site_url();?>/privacy-policy/">Privacy policy</a> </li>
