@@ -1039,7 +1039,6 @@ footer .f_links ul li a:hover { color: var(--primary); }
     font-weight: 400;
     line-height: 32px;
 }
-.priceArea .col-md-6:first-child h4{ display: none; }
 
 .featuredTabs .padSpc{  padding-right: 0; }
 
@@ -1121,10 +1120,11 @@ footer .f_links ul li a:hover { color: var(--primary); }
 }
 @media all and (max-width: 767px) {
 
-    .topBg {
+    .topBg, .bannerWraper {
         background: linear-gradient(85deg, #000 26.15%, #2EE1D5 198.11%);
     }
-    
+    .bnr_content.securitySpace{ padding-bottom: 40px; }
+
     .logoMobile{ display: inline-block; }
 
     .offcanvas-header, .mobileHeader{ display:block; }
