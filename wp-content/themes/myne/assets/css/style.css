@@ -738,7 +738,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     content: ' ';
     z-index: 1;
 }
-.imgFrames.mobOnly{ display: none; }
+.imgFrames.mobOnly, .mobImg.mobOnly{ display: none; }
 
 .tabsSty .nav.nav-tabs {
     background: transparent;
@@ -1024,7 +1024,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 	min-height:240px;
 }
 .priceArea .priceBox h3 span {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32px;
 }
@@ -1343,9 +1343,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .priceWraper .titleArea .mainTitle, .titlSpace {   margin-bottom: 32px; }
 
-    .imgFrames.webOnly{ display: none; }
+    .imgFrames.webOnly, .webImg.webOnly{ display: none; }
 
-    .imgFrames.mobOnly { display: block; margin-top: 10px; }
+    .imgFrames.mobOnly, .mobImg.mobOnly { display: block; margin-top: 10px; }
 
     .tabsSty .btn-primary{ width: 100%; }
 
@@ -1374,6 +1374,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .teamBxs .teamImg img{ min-height: 240px; }
 
     .teamBxs h4 { font-size: 20px;  line-height: 28px; }
+
     .teamBxs .paragraph {
         font-size: 14px;
         line-height: 18px;
@@ -1417,6 +1418,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .f_about .appIcons .btnSpace{ margin-left: 0; margin-right: 8px; }  
 
     .webImg {  padding: 30px 0; }
+
     .appDownload .appIcons.my-2{ margin-bottom: 0 !important; }
 
 }
