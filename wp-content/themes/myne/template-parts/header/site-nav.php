@@ -39,12 +39,12 @@ if (strpos($url,'price') !== false) {
     <!-- Signup-Start -->
     <li class="nav-item dropdown btn-Link mobHide"> <a class="nav-link dropdown-toggle btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Get Started</a> 
       <ul class="dropdown-menu signUp">
-        <li class="nav-item"> <a class="nav-link" href="<?php echo $header['get_started_sign_up_for_client_user_url'];?>">Sign up for client user </a> </li>
-        <li class="nav-item"> <a class="nav-link" href="<?php echo $header['get_started_sign_up_page_url'];?>">Sign up page</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="<?php echo $header['get_started_sign_up_for_client_user_url'];?>">Customer</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="<?php echo $header['get_started_sign_up_page_url'];?>">Wealth Planner</a> </li>
       </ul>
     </li>
-    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn" href="<?php echo $header['get_started_sign_up_for_client_user_url'];?>">Sign up for client user</a> </li>
-    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn" href="<?php echo $header['get_started_sign_up_page_url'];?>">Sign up page</a> </li>
+    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn" href="<?php echo $header['get_started_sign_up_for_client_user_url'];?>">Sign up as Customer</a> </li>
+    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn" href="<?php echo $header['get_started_sign_up_page_url'];?>">Sign up as Wealth Planner/a> </li>
     <!-- Signup-End -->
   </ul>
 </div>
