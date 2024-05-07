@@ -1484,6 +1484,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .priceBox ul li{ padding-left: 38px; }
 
+    .whyChoose.inner .chooseBx { min-height: 220px; margin-bottom: 16px; }
+
+
+
 }
 @media all and (max-width: 580px) {
 
