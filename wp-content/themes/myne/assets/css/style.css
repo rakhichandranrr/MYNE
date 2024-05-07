@@ -805,7 +805,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .tabsSty .nav-tabs span.imgSpc img { max-height: 26px; }
 
-.imgAlign .webImg{ text-align: left; }
+.imgAlign .webImg{ text-align: left; padding-left: 50px; }
 
 .prdctList .paragraph{
     font-size: 16px;
@@ -813,7 +813,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     margin-bottom: 10px;
     line-height: 20px; 
 }
-.tabsSty .tab-content{ margin-top: 15px; }
+.tabsSty .tab-content{ margin-top: 0px; }
 
 .tabsSty .tab-content.ftrOnly{ margin-top: 48px; }
 
@@ -1028,7 +1028,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     position: relative;
     z-index: 1;
 }
-.webImg img{ height: 420px; object-fit: cover; }
+.webImg img{ height: 520px; object-fit: cover; }
 
 .txtHeight { min-height: 80px; }
 
