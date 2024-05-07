@@ -801,7 +801,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .featuredTabs .tabsSty .nav-tabs .nav-link.active { border-bottom: 4px solid var(--primary); }
 
-
+.featuredTabs .webImg img { height: 480px;  object-fit: cover; }
 
 .tabsSty .nav-tabs span.imgSpc img { max-height: 26px; }
 
