@@ -664,7 +664,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .titlSpace{ margin-bottom: 64px; }
 
-.prdctList.tab-pane .contSpc {  padding-left: 10%; padding-right: 7%; }
+.prdctList.tab-pane .contSpc {  padding-left: 10%; padding-right: 0; }
 
 .tabFrame{
     background-image: url(../images/others/frame-tab.png);
