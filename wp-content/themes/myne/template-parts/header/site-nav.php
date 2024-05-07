@@ -44,7 +44,7 @@ if (strpos($url,'price') !== false) {
       </ul>
     </li>
     <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn" href="<?php echo $header['get_started_sign_up_for_client_user_url'];?>">Sign up as Customer</a> </li>
-    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn" href="<?php echo $header['get_started_sign_up_page_url'];?>">Sign up as Wealth Planner/a> </li>
+    <li class="nav-item btn-Link mobOnly"> <a class="nav-link btn" href="<?php echo $header['get_started_sign_up_page_url'];?>">Sign up as Wealth Planner</a> </li>
     <!-- Signup-End -->
   </ul>
 </div>
