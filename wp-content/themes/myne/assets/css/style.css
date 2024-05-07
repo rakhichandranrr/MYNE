@@ -1063,6 +1063,12 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .featuredTabs .tabFrame .prdImg { min-height: 295px; }
 
     .featuredTabs .tabFrame, .featuredTabs .tabFrame::before {  width: 465px;  height: 314px; }
+
+    
+}
+@media all and (max-width: 1080px) {
+    .webImg img {  height: 453px; }
+
 }
 @media all and (max-width: 991px) {
 
@@ -1117,7 +1123,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
     .featuredTabs .padSpc{  padding: 0; }
 
+    .imgAlign .webImg{ padding-left: 0; }
 
+
+    
 }
 @media all and (max-width: 767px) {
 
