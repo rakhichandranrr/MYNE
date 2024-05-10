@@ -664,7 +664,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .titlSpace{ margin-bottom: 64px; }
 
-.prdctList.tab-pane .contSpc {  padding-left: 10%; padding-right: 7%; }
+.prdctList.tab-pane .contSpc {  padding-left: 10%; padding-right: 0; }
 
 .tabFrame{
     background-image: url(../images/others/frame-tab.png);
@@ -801,11 +801,11 @@ footer .f_links ul li a:hover { color: var(--primary); }
 
 .featuredTabs .tabsSty .nav-tabs .nav-link.active { border-bottom: 4px solid var(--primary); }
 
-
+.featuredTabs .webImg img { height: 480px;  object-fit: cover; }
 
 .tabsSty .nav-tabs span.imgSpc img { max-height: 26px; }
 
-.imgAlign .webImg{ text-align: left; }
+.imgAlign .webImg{ text-align: left; padding-left: 35px; }
 
 .prdctList .paragraph{
     font-size: 16px;
@@ -813,7 +813,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     margin-bottom: 10px;
     line-height: 20px; 
 }
-.tabsSty .tab-content{ margin-top: 15px; }
+.tabsSty .tab-content{ margin-top: 0px; }
 
 .tabsSty .tab-content.ftrOnly{ margin-top: 48px; }
 
@@ -1028,7 +1028,7 @@ footer .f_links ul li a:hover { color: var(--primary); }
     position: relative;
     z-index: 1;
 }
-.webImg img{ height: 420px; object-fit: cover; }
+.webImg img{ height: 520px; object-fit: cover; }
 
 .txtHeight { min-height: 80px; }
 
@@ -1063,6 +1063,12 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .featuredTabs .tabFrame .prdImg { min-height: 295px; }
 
     .featuredTabs .tabFrame, .featuredTabs .tabFrame::before {  width: 465px;  height: 314px; }
+
+    
+}
+@media all and (max-width: 1080px) {
+    .webImg img {  height: 453px; }
+
 }
 @media all and (max-width: 991px) {
 
@@ -1116,6 +1122,9 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .prdctList.tab-pane .contSpc{ padding-left: 15%; padding-right: 15%; }
 
     .featuredTabs .padSpc{  padding: 0; }
+
+    .imgAlign .webImg{ padding-left: 0; }
+
 
 
 }
@@ -1474,6 +1483,10 @@ footer .f_links ul li a:hover { color: var(--primary); }
     .priceBox ul li::before {  width: 26px; height: 27px; }
 
     .priceBox ul li{ padding-left: 38px; }
+
+    .whyChoose.inner .chooseBx { min-height: 210px; margin-bottom: 16px; }
+
+
 
 }
 @media all and (max-width: 580px) {
