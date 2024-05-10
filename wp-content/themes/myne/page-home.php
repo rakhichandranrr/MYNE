@@ -4,7 +4,6 @@ get_header();
 
 $banner = get_field('banner');
 $get_started = get_field('get_started');
-$feature = get_field('feature');
 $why_choose_myne = get_field('why_choose_myne');
 $technology = get_field('technology_section');
 
@@ -48,18 +47,7 @@ $technology = get_field('technology_section');
 </section>
 <!-- BANNER-END --> 
 
-<!-- FEATURE START -->
-<!-- <section class="secSpace ftrWrap">
-  <div class="container">
-    <div class="titleArea">
-      <h2 class="mainTitle mb-4"><?php echo $feature['feature_heading'];?></h2>
-      <div class="paragraph"> <?php echo $feature['feature_short_description'];?></div>
-    </div>
-    <div class="imgBg img_space mt-3 mb-5"> <img src="<?php echo $feature['feature_image']['url'];?>" alt="img"> </div>
-    <div class="appIcons my-2 text-center"> <?php echo get_app_icons();?> </div>
-  </div>
-</section> -->
-<!-- FEATURE END --> 
+
 
 <div class="newShadow">
 
